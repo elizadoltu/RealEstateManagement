@@ -17,9 +17,9 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<PropertyListing> GetListingByIdAsync(Guid id)
+        public async Task<PropertyListing> GetListingByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await context.PropertyListings.FindAsync(id);
         }
 
         public Task<IEnumerable<PropertyListing>> GetListingsByUserId(Guid userId)
@@ -34,9 +34,29 @@ namespace Infrastructure.Repositories
             return listing.PropertyId;
         }
 
-        public Task UpdateListingAsync(PropertyListing listing)
+        public async Task UpdateListingAsync(PropertyListing listing)
         {
-            throw new NotImplementedException();
+            var existingListing = await context.PropertyListings.FindAsync(listing.PropertyId);
+            if (existingListing != null)
+            {
+                existingListing.Address = listing.Address;
+                existingListing.Type = listing.Type;
+                existingListing.Price = listing.Price;
+                existingListing.SquareFootage = listing.SquareFootage;
+                existingListing.NumberOfBedrooms = listing.NumberOfBedrooms;
+                existingListing.NumberOfBathrooms = listing.NumberOfBathrooms;
+                existingListing.Description = listing.Description;
+                existingListing.Status = listing.Status;
+                existingListing.ListingDate = listing.ListingDate;
+                existingListing.ImageURLs = listing.ImageURLs;
+
+                context.PropertyListings.Update(existingListing);
+                await context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception($"Property listing with ID {listing.PropertyId} not found.");
+            }
         }
 
         public Task DeleteListingAsync(Guid id)
