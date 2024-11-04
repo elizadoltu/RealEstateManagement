@@ -13,7 +13,7 @@
         public string? Status { get; set; }
         public DateTime ListingDate { get; set; }
         public string? ImageURLs { get; set; }
-        public Guid UserId { get; set; }
+        public Guid UserID { get; set; }
 
     }
 }

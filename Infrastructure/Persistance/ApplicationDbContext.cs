@@ -33,12 +33,12 @@ namespace Infrastructure.Persistance
                         entity.Property(e => e.Status).IsRequired();
                         entity.Property(e => e.ListingDate).IsRequired();
                         entity.Property(e => e.ImageURLs).IsRequired();
-                        entity.Property(e => e.UserId).IsRequired();
+                        entity.Property(e => e.UserID).IsRequired();
 
-                        entity.HasOne<User>()
+                        /*entity.HasOne<User>()
                             .WithMany()
-                            .HasForeignKey(e => e.UserId)
-                            .OnDelete(DeleteBehavior.Cascade);
+                            .HasForeignKey(e => e.UserID)
+                            .OnDelete(DeleteBehavior.Cascade);*/
                     }
                 );
             

@@ -107,12 +107,10 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid>("UserID")
                         .HasColumnType("uuid");
 
                     b.HasKey("PropertyId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("PropertyListings", (string)null);
                 });
@@ -182,15 +180,6 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Domain.Entities.PropertyListing", b =>
-                {
-                    b.HasOne("Domain.Entities.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

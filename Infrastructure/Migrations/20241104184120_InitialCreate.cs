@@ -16,6 +16,28 @@ namespace Infrastructure.Migrations
                 .Annotation("Npgsql:PostgresExtension:uuid-ossp", ",,");
 
             migrationBuilder.CreateTable(
+                name: "PropertyListings",
+                columns: table => new
+                {
+                    PropertyId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    Address = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
+                    Type = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<double>(type: "double precision", nullable: false),
+                    SquareFootage = table.Column<double>(type: "double precision", nullable: false),
+                    NumberOfBedrooms = table.Column<double>(type: "double precision", nullable: false),
+                    NumberOfBathrooms = table.Column<double>(type: "double precision", nullable: false),
+                    Description = table.Column<string>(type: "character varying(400)", maxLength: 400, nullable: false),
+                    Status = table.Column<string>(type: "text", nullable: false),
+                    ListingDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ImageURLs = table.Column<string>(type: "text", nullable: false),
+                    UserID = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PropertyListings", x => x.PropertyId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -49,34 +71,6 @@ namespace Infrastructure.Migrations
                     table.ForeignKey(
                         name: "FK_ClientInquiries_Users_ClientId",
                         column: x => x.ClientId,
-                        principalTable: "Users",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "PropertyListings",
-                columns: table => new
-                {
-                    PropertyId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
-                    Address = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
-                    Type = table.Column<string>(type: "text", nullable: false),
-                    Price = table.Column<double>(type: "double precision", nullable: false),
-                    SquareFootage = table.Column<double>(type: "double precision", nullable: false),
-                    NumberOfBedrooms = table.Column<double>(type: "double precision", nullable: false),
-                    NumberOfBathrooms = table.Column<double>(type: "double precision", nullable: false),
-                    Description = table.Column<string>(type: "character varying(400)", maxLength: 400, nullable: false),
-                    Status = table.Column<string>(type: "text", nullable: false),
-                    ListingDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ImageURLs = table.Column<string>(type: "text", nullable: false),
-                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PropertyListings", x => x.PropertyId);
-                    table.ForeignKey(
-                        name: "FK_PropertyListings_Users_UserId",
-                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
@@ -120,11 +114,6 @@ namespace Infrastructure.Migrations
                 name: "IX_ClientInquiries_ClientId",
                 table: "ClientInquiries",
                 column: "ClientId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PropertyListings_UserId",
-                table: "PropertyListings",
-                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Transactions_BuyerId",
