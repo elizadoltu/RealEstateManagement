@@ -27,9 +27,11 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<PropertyListing> AddListingAsync(PropertyListing listing)
+        public async Task<Guid> AddListingAsync(PropertyListing listing)
         {
-            throw new NotImplementedException();
+            await context.PropertyListings.AddAsync(listing);
+            await context.SaveChangesAsync();
+            return listing.PropertyId;
         }
 
         public Task UpdateListingAsync(PropertyListing listing)

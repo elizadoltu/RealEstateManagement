@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Use_Cases.Commands;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateManagement.Controllers
@@ -14,6 +15,10 @@ namespace RealEstateManagement.Controllers
             this.mediator = mediator;
         }
 
-
+        [HttpPost]
+        public async Task<ActionResult<Guid>> CreatePropertyListing(CreatePropertyListingCommand command)
+        {
+            return await mediator.Send(command);
+        }
     }
 }

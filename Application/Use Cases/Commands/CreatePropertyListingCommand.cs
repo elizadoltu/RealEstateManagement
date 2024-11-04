@@ -1,8 +1,9 @@
-﻿namespace Domain.Entities
+﻿using MediatR;
+
+namespace Application.Use_Cases.Commands
 {
-    public class PropertyListing
+    public class CreatePropertyListingCommand : IRequest<Guid>
     {
-        public Guid PropertyId { get; set; }
         public string? Address { get; set; }
         public string? Type { get; set; }
         public double Price { get; set; }
@@ -14,6 +15,5 @@
         public DateTime ListingDate { get; set; }
         public string? ImageURLs { get; set; }
         public Guid UserID { get; set; }
-
     }
 }
