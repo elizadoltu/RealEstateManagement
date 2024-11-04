@@ -40,5 +40,12 @@ namespace RealEstateManagement.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        public async Task<ActionResult<List<PropertyListingDTO>>> GetAllPropertyListingsAsync()
+        {
+            var result = await mediator.Send(new GetAllPropertyListingQuery());
+            return Ok(result);
+        }
+
     }
 }

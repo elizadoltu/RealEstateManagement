@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -12,9 +13,9 @@ namespace Infrastructure.Repositories
         {
             this.context = context;
         }
-        public Task<IEnumerable<PropertyListing>> GetAllListingsAsync()
+        public async Task<IEnumerable<PropertyListing>> GetAllListingsAsync()
         {
-            throw new NotImplementedException();
+            return await context.PropertyListings.ToListAsync();
         }
 
         public async Task<PropertyListing> GetListingByIdAsync(Guid id)
