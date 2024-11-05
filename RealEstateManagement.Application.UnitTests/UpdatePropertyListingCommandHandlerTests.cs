@@ -1,11 +1,10 @@
-using Application.Use_Cases.Commands;
 using Application.Use_Cases.CommandHandlers;
+using Application.Use_Cases.Commands;
 using Domain.Entities;
 using Domain.Repositories;
 using FluentAssertions;
-using NSubstitute;
-using Xunit;
 using MediatR;
+using NSubstitute;
 
 namespace RealEstateManagement.Application.UnitTests
 {
@@ -70,7 +69,7 @@ namespace RealEstateManagement.Application.UnitTests
         {
             return new UpdatePropertyListingCommand
             {
-                PropertyId = Guid.NewGuid(),
+                PropertyId = new Guid("28d69cce-1274-42f9-ad8e-3ffcf960421c"),
                 Address = "123 Main St",
                 Type = "House",
                 Price = 100000,
@@ -81,7 +80,7 @@ namespace RealEstateManagement.Application.UnitTests
                 Status = "Available",
                 ListingDate = DateTime.Now,
                 ImageURLs = "http://example.com/image1.jpg",
-                UserID = Guid.NewGuid()
+                UserID = new Guid("23c15cbb-9fbc-4076-9685-2d691996a323")
             };
         }
 

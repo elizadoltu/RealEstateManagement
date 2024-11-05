@@ -129,7 +129,7 @@ namespace RealEstateManagement.Application.UnitTests
             {
                 new PropertyListing
                 {
-                    PropertyId = Guid.NewGuid(),
+                    PropertyId = new Guid("9539ec12-2c87-472a-9752-20889cba0f48"),
                     Address = "123 Main St",
                     Type = "House",
                     Price = 100000,
@@ -140,11 +140,11 @@ namespace RealEstateManagement.Application.UnitTests
                     Status = "Available",
                     ListingDate = DateTime.Now,
                     ImageURLs = "http://example.com/image1.jpg",
-                    UserID = Guid.NewGuid()
+                    UserID = new Guid("dd5b1c43-e9dd-40cf-82e1-e6b17f96f152")
                 },
                 new PropertyListing
                 {
-                    PropertyId = Guid.NewGuid(),
+                    PropertyId = new Guid("d7a597df-4cef-4754-967f-296e74e1ce70"),
                     Address = "456 Elm St",
                     Type = "Condo",
                     Price = 200000,
@@ -155,7 +155,7 @@ namespace RealEstateManagement.Application.UnitTests
                     Status = "Available",
                     ListingDate = DateTime.Now,
                     ImageURLs = "http://example.com/image2.jpg",
-                    UserID = Guid.NewGuid()
+                    UserID = new Guid("7b2ed928-a903-47f5-8bcd-c93216154f29")
                 }
             };
         }

@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using Domain.Common;
+using MediatR;
 
 namespace Application.Use_Cases.Commands
 {
-    public class CreatePropertyListingCommand : IRequest<Guid>
+    public class CreatePropertyListingCommand : IRequest<Result<Guid>>
     {
         public string? Address { get; set; }
         public string? Type { get; set; }

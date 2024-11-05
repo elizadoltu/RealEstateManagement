@@ -1,13 +1,13 @@
 ﻿using Application.Use_Cases.Commands;
 using AutoMapper;
+using Domain.Common;
 using Domain.Entities;
 using Domain.Repositories;
-using FluentValidation;
 using MediatR;
 
 namespace Application.Use_Cases.CommandHandlers
 {
-    public class CreatePropertyListingCommandHandler : IRequestHandler<CreatePropertyListingCommand, Guid>
+    public class CreatePropertyListingCommandHandler : IRequestHandler<CreatePropertyListingCommand, Result<Guid>>
     {
         private readonly IPropertyListingRepository repository;
         private readonly IMapper mapper;
@@ -18,17 +18,16 @@ namespace Application.Use_Cases.CommandHandlers
             this.mapper = mapper;
         }
 
-        public async Task<Guid> Handle(CreatePropertyListingCommand request, CancellationToken cancellationToken)
+        public async Task<Result<Guid>> Handle(CreatePropertyListingCommand request, CancellationToken cancellationToken)
         {
-            /*CreatePropertyListingCommandValidator validatorRules = new CreatePropertyListingCommandValidator();
-            var validationResult = validatorRules.Validate(request);
-            if(!validationResult.IsValid)
-            {
-                throw new ValidationException(validationResult.Errors);
-            }*/
             var propertyListing = mapper.Map<PropertyListing>(request);
-            
-            return await repository.AddListingAsync(propertyListing);
+
+            var result = await repository.AddListingAsync(propertyListing);
+            if(result.IsSuccess)
+            {
+                return Result<Guid>.Success(result.Data);
+            }
+            return Result<Guid>.Failure(result.ErrorMessage);
         }
     }
 }

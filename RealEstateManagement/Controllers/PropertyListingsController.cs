@@ -1,6 +1,7 @@
 ﻿using Application.DTOs;
 using Application.Use_Cases.Commands;
 using Application.Use_Cases.Queries;
+using Domain.Common;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +20,7 @@ namespace RealEstateManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Guid>> CreatePropertyListing(CreatePropertyListingCommand command)
+        public async Task<ActionResult<Result<Guid>>> CreatePropertyListing(CreatePropertyListingCommand command)
         {
             return await mediator.Send(command);
         }

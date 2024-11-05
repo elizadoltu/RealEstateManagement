@@ -1,11 +1,11 @@
-using Application.Use_Cases.Commands;
 using Application.Use_Cases.CommandHandlers;
+using Application.Use_Cases.Commands;
 using AutoMapper;
+using Domain.Common;
 using Domain.Entities;
 using Domain.Repositories;
 using FluentAssertions;
 using NSubstitute;
-using Xunit;
 
 namespace RealEstateManagement.Application.UnitTests
 {
@@ -21,38 +21,40 @@ namespace RealEstateManagement.Application.UnitTests
         }
 
         [Fact]
-        public async Task Given_CreatePropertyListingCommandHandler_When_HandleIsCalled_Then_PropertyListingIdShouldBeReturned()
+        public async Task Given_CreatePropertyListingCommandHandler_When_HandleIsCalled_Then_SuccessResultShouldBeReturned()
         {
             // Arrange
             var command = GenerateCreatePropertyListingCommand();
             var propertyListing = GeneratePropertyListing(command);
-            var propertyId = Guid.NewGuid();
+            var propertyId = new Guid("23c15cbb-9fbc-4076-9685-2d691996a323");
             mapper.Map<PropertyListing>(command).Returns(propertyListing);
-            repository.AddListingAsync(propertyListing).Returns(propertyId);
+            repository.AddListingAsync(propertyListing).Returns(Result<Guid>.Success(propertyId));
 
             // Act
             var handler = new CreatePropertyListingCommandHandler(repository, mapper);
             var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
-            result.Should().Be(propertyId);
+            result.IsSuccess.Should().BeTrue();
+            result.Data.Should().Be(propertyId);
         }
 
         [Fact]
-        public async Task Given_CreatePropertyListingCommandHandler_When_HandleIsCalled_Then_ExceptionShouldBeThrown()
+        public async Task Given_CreatePropertyListingCommandHandler_When_HandleIsCalled_Then_FailureResultShouldBeReturned()
         {
             // Arrange
             var command = GenerateCreatePropertyListingCommand();
             var propertyListing = GeneratePropertyListing(command);
             mapper.Map<PropertyListing>(command).Returns(propertyListing);
-            repository.AddListingAsync(propertyListing).Returns(Task.FromException<Guid>(new Exception("Database error")));
+            repository.AddListingAsync(propertyListing).Returns(Result<Guid>.Failure("Database error"));
 
             // Act
             var handler = new CreatePropertyListingCommandHandler(repository, mapper);
-            Func<Task> act = async () => await handler.Handle(command, CancellationToken.None);
+            var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
-            await act.Should().ThrowAsync<Exception>().WithMessage("Database error");
+            result.IsSuccess.Should().BeFalse();
+            result.ErrorMessage.Should().Be("Database error");
         }
 
         private CreatePropertyListingCommand GenerateCreatePropertyListingCommand()
@@ -77,7 +79,7 @@ namespace RealEstateManagement.Application.UnitTests
         {
             return new PropertyListing
             {
-                PropertyId = Guid.NewGuid(),
+                PropertyId = new Guid("23c15cbb-9fbc-4076-9685-2d691996a323"),
                 Address = command.Address,
                 Type = command.Type,
                 Price = command.Price,

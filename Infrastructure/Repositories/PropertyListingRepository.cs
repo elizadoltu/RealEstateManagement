@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Common;
+using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
@@ -28,11 +29,18 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<Guid> AddListingAsync(PropertyListing listing)
+        public async Task<Result<Guid>> AddListingAsync(PropertyListing listing)
         {
-            await context.PropertyListings.AddAsync(listing);
-            await context.SaveChangesAsync();
-            return listing.PropertyId;
+            try
+            {
+                await context.PropertyListings.AddAsync(listing);
+                await context.SaveChangesAsync();
+                return Result<Guid>.Success(listing.PropertyId);
+            }
+            catch (Exception ex)
+            {
+                return Result<Guid>.Failure(ex.InnerException!.ToString());
+            }
         }
 
         public async Task UpdateListingAsync(PropertyListing listing)

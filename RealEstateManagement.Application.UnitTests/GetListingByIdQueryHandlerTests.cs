@@ -6,7 +6,6 @@ using Domain.Entities;
 using Domain.Repositories;
 using FluentAssertions;
 using NSubstitute;
-using Xunit;
 
 namespace RealEstateManagement.Application.UnitTests
 {
@@ -25,7 +24,7 @@ namespace RealEstateManagement.Application.UnitTests
         public async Task Given_GetListingByIdQueryHandler_When_HandleIsCalled_Then_PropertyListingShouldBeReturned()
         {
             // Arrange
-            var propertyId = Guid.NewGuid();
+            var propertyId = new Guid("7b2ed928-a903-47f5-8bcd-c93216154f29");
             var propertyListing = GeneratePropertyListing(propertyId);
             repository.GetListingByIdAsync(propertyId).Returns(propertyListing);
             var query = new GetListingByIdQuery { PropertyId = propertyId };
@@ -45,7 +44,7 @@ namespace RealEstateManagement.Application.UnitTests
         public async Task Given_GetListingByIdQueryHandler_When_HandleIsCalled_Then_ExceptionShouldBeThrown()
         {
             // Arrange
-            var propertyId = Guid.NewGuid();
+            var propertyId = new Guid("7b2ed928-a903-47f5-8bcd-c93216154f29");
             repository.GetListingByIdAsync(propertyId).Returns((PropertyListing)null);
             var query = new GetListingByIdQuery { PropertyId = propertyId };
 
@@ -72,7 +71,7 @@ namespace RealEstateManagement.Application.UnitTests
                 Status = "Available",
                 ListingDate = DateTime.Now,
                 ImageURLs = "http://example.com/image1.jpg",
-                UserID = Guid.NewGuid()
+                UserID = new Guid("28d69cce-1274-42f9-ad8e-3ffcf960421c")
             };
         }
 
