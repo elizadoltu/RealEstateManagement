@@ -43,29 +43,39 @@ namespace Infrastructure.Repositories
             }
         }
 
-        public async Task UpdateListingAsync(PropertyListing listing)
+        public async Task<Result<Guid>> UpdateListingAsync(PropertyListing listing)
         {
-            var existingListing = await context.PropertyListings.FindAsync(listing.PropertyId);
-            if (existingListing != null)
+            try
             {
-                existingListing.Address = listing.Address;
-                existingListing.Type = listing.Type;
-                existingListing.Price = listing.Price;
-                existingListing.SquareFootage = listing.SquareFootage;
-                existingListing.NumberOfBedrooms = listing.NumberOfBedrooms;
-                existingListing.NumberOfBathrooms = listing.NumberOfBathrooms;
-                existingListing.Description = listing.Description;
-                existingListing.Status = listing.Status;
-                existingListing.ListingDate = listing.ListingDate;
-                existingListing.ImageURLs = listing.ImageURLs;
+                var existingListing = await context.PropertyListings.FindAsync(listing.PropertyId);
+                if (existingListing != null)
+                {
+                    existingListing.Address = listing.Address;
+                    existingListing.Type = listing.Type;
+                    existingListing.Price = listing.Price;
+                    existingListing.SquareFootage = listing.SquareFootage;
+                    existingListing.NumberOfBedrooms = listing.NumberOfBedrooms;
+                    existingListing.NumberOfBathrooms = listing.NumberOfBathrooms;
+                    existingListing.Description = listing.Description;
+                    existingListing.Status = listing.Status;
+                    existingListing.ListingDate = listing.ListingDate;
+                    existingListing.ImageURLs = listing.ImageURLs;
 
-                context.PropertyListings.Update(existingListing);
-                await context.SaveChangesAsync();
+                    context.PropertyListings.Update(existingListing);
+                    await context.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception($"Property listing with ID {listing.PropertyId} not found.");
+                }
+
+                return Result<Guid>.Success(listing.PropertyId);
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception($"Property listing with ID {listing.PropertyId} not found.");
+                return Result<Guid>.Failure(ex.InnerException!.ToString());
             }
+            
         }
 
         public Task DeleteListingAsync(Guid id)

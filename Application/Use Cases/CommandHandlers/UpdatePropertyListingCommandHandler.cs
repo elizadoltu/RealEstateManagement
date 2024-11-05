@@ -1,10 +1,11 @@
 ﻿using Application.Use_Cases.Commands;
+using Domain.Common;
 using Domain.Repositories;
 using MediatR;
 
 namespace Application.Use_Cases.CommandHandlers
 {
-    public class UpdatePropertyListingCommandHandler : IRequestHandler<UpdatePropertyListingCommand, Unit>
+    public class UpdatePropertyListingCommandHandler : IRequestHandler<UpdatePropertyListingCommand, Result<Guid>>
     {
         private readonly IPropertyListingRepository repository;
 
@@ -13,13 +14,13 @@ namespace Application.Use_Cases.CommandHandlers
             this.repository = repository;
         }
 
-        public async Task<Unit> Handle(UpdatePropertyListingCommand request, CancellationToken cancellationToken)
+        public async Task<Result<Guid>> Handle(UpdatePropertyListingCommand request, CancellationToken cancellationToken)
         {
             var listing = await repository.GetListingByIdAsync(request.PropertyId);
 
             if (listing == null)
             {
-                throw new Exception($"Property listing with ID {request.PropertyId} not found.");
+                return Result<Guid>.Failure($"Property listing with ID {request.PropertyId} not found.");
             }
 
             // Update properties
@@ -35,9 +36,13 @@ namespace Application.Use_Cases.CommandHandlers
             listing.ImageURLs = request.ImageURLs;
 
             // Save changes
-            await repository.UpdateListingAsync(listing);
+            var result = await repository.UpdateListingAsync(listing);
 
-            return Unit.Value;
+            if (result.IsSuccess)
+            {
+                return Result<Guid>.Success(result.Data);
+            }
+            return Result<Guid>.Failure(result.ErrorMessage);
         }
     }
 }

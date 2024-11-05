@@ -22,17 +22,32 @@ namespace RealEstateManagement.Controllers
         [HttpPost]
         public async Task<ActionResult<Result<Guid>>> CreatePropertyListing(CreatePropertyListingCommand command)
         {
-            return await mediator.Send(command);
+            var result = await mediator.Send(command);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return BadRequest(result.ErrorMessage);
+            }
         }
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult<Unit>> UpdatePropertyListing(Guid id, UpdatePropertyListingCommand command)
+        public async Task<ActionResult<Result<Unit>>> UpdatePropertyListing(Guid id, UpdatePropertyListingCommand command)
         {
             if (id != command.PropertyId)
             {
                 return BadRequest();
             }
-            await mediator.Send(command);
-            return NoContent();
+            var result = await mediator.Send(command);
+            if (result.IsSuccess)
+            {
+                return NoContent();
+            } else
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+
         }
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<PropertyListingDTO>> GetListingByIdAsync(Guid id)
