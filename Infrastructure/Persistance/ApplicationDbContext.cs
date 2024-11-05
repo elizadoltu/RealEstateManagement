@@ -9,9 +9,9 @@ namespace Infrastructure.Persistance
         {
         }
         public DbSet<PropertyListing> PropertyListings { get; set; }
-        //public DbSet<ClientInquiry> ClientInquiries { get; set; }
-        //public DbSet<Transaction> Transactions { get; set; }
-        //public DbSet<User> Users { get; set; }
+        public DbSet<ClientInquiry> ClientInquiries { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,9 +34,14 @@ namespace Infrastructure.Persistance
                         entity.Property(e => e.ListingDate).IsRequired();
                         entity.Property(e => e.ImageURLs).IsRequired();
                         entity.Property(e => e.UserID).IsRequired();
+
+                        /*entity.HasOne<User>()
+                            .WithMany()
+                            .HasForeignKey(e => e.UserID)
+                            .OnDelete(DeleteBehavior.Cascade);*/
                     }
                 );
-            /*
+            
             modelBuilder.Entity<ClientInquiry>(
                 entity =>
                 {
@@ -44,8 +49,13 @@ namespace Infrastructure.Persistance
                     entity.HasKey(e => e.InquiryId);
                     entity.Property(e => e.InquiryId).HasColumnType("uuid").HasDefaultValueSql("uuid_generate_v4()").ValueGeneratedOnAdd();
                     entity.Property(e => e.ClientId).IsRequired();
-                });
 
+                    entity.HasOne<User>()
+                        .WithMany()
+                        .HasForeignKey(e => e.ClientId)
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+            
             modelBuilder.Entity<Transaction>(
                 entity =>
                 {
@@ -57,7 +67,24 @@ namespace Infrastructure.Persistance
                     entity.Property(e => e.SellerId).IsRequired();
                     entity.Property(e => e.SalePrice).IsRequired();
                     entity.Property(e => e.Status).IsRequired();
+
+                    entity.HasOne<PropertyListing>()
+                        .WithMany()
+                        .HasForeignKey(e => e.PropertyId)
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    entity.HasOne<User>()
+                        .WithMany()
+                        .HasForeignKey(e => e.BuyerId)
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    entity.HasOne<User>()
+                        .WithMany()
+                        .HasForeignKey(e => e.SellerId)
+                        .OnDelete(DeleteBehavior.Cascade);
+
                 });
+
             modelBuilder.Entity<User>(
                 entity =>
                 {
@@ -68,7 +95,7 @@ namespace Infrastructure.Persistance
                     entity.Property(e => e.Email).IsRequired().HasMaxLength(50);
                     entity.Property(e => e.PhoneNumber).IsRequired();
 
-                });*/
+                });
         }
     }
 }
