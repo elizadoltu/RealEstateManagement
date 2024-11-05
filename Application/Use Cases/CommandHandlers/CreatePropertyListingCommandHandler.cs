@@ -2,6 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 using Domain.Repositories;
+using FluentValidation;
 using MediatR;
 
 namespace Application.Use_Cases.CommandHandlers
@@ -19,7 +20,14 @@ namespace Application.Use_Cases.CommandHandlers
 
         public async Task<Guid> Handle(CreatePropertyListingCommand request, CancellationToken cancellationToken)
         {
+            /*CreatePropertyListingCommandValidator validatorRules = new CreatePropertyListingCommandValidator();
+            var validationResult = validatorRules.Validate(request);
+            if(!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }*/
             var propertyListing = mapper.Map<PropertyListing>(request);
+            
             return await repository.AddListingAsync(propertyListing);
         }
     }

@@ -1,6 +1,4 @@
-﻿using Domain.Entities;
-using MediatR;
-using System;
+﻿using MediatR;
 
 namespace Application.Use_Cases.Commands
 {

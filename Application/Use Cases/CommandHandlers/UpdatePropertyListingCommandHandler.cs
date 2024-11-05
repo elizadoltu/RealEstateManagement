@@ -1,5 +1,6 @@
 ﻿using Application.Use_Cases.Commands;
 using Domain.Repositories;
+using FluentValidation;
 using MediatR;
 using System;
 using System.Threading;
@@ -18,6 +19,13 @@ namespace Application.Use_Cases.CommandHandlers
 
         public async Task<Unit> Handle(UpdatePropertyListingCommand request, CancellationToken cancellationToken)
         {
+            /*UpdatePropertyListingCommandValidator validatorRules = new UpdatePropertyListingCommandValidator();
+            var validationResult = validatorRules.Validate(request);
+            if (!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }*/
+
             var listing = await repository.GetListingByIdAsync(request.PropertyId);
 
             if (listing == null)
