@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Use_Cases.ClientInquiries.Commands;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateManagement.Controllers
@@ -11,6 +12,17 @@ namespace RealEstateManagement.Controllers
         public ClientInquiriesController(IMediator mediator)
         {
             this.mediator = mediator;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateInquiry([FromBody] CreateClientInquiryCommand command)
+        {
+            var result = await mediator.Send(command);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            return BadRequest(result.ErrorMessage);
         }
     }
 }

@@ -31,5 +31,10 @@ namespace Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public Task<IEnumerable<PropertyListing>> GetListingsByUserId(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

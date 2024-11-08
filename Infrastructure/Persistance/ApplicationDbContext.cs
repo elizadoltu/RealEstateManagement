@@ -50,10 +50,10 @@ namespace Infrastructure.Persistance
                     entity.Property(e => e.InquiryId).HasColumnType("uuid").HasDefaultValueSql("uuid_generate_v4()").ValueGeneratedOnAdd();
                     entity.Property(e => e.ClientId).IsRequired();
 
-                    entity.HasOne<User>()
-                        .WithMany()
-                        .HasForeignKey(e => e.ClientId)
-                        .OnDelete(DeleteBehavior.Cascade);
+                    //entity.HasOne<User>()
+                    //    .WithMany()
+                    //    .HasForeignKey(e => e.ClientId)
+                    //    .OnDelete(DeleteBehavior.Cascade);
                 });
             
             modelBuilder.Entity<Transaction>(

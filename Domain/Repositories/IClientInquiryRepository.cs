@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Common;
+using Domain.Entities;
 
 namespace Domain.Repositories
 {
@@ -7,7 +8,7 @@ namespace Domain.Repositories
         Task<IEnumerable<ClientInquiry>> GetAllInquiriesAsync();
         Task<ClientInquiry> GetInquiryByIdAsync(Guid id);
         Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid clientId);
-        Task<ClientInquiry> AddInquiryAsync(ClientInquiry inquiry);
+        Task<Result<Guid>> AddInquiryAsync(ClientInquiry inquiry);
         Task UpdateInquiryAsync(ClientInquiry inquiry);
         Task DeleteInquiryAsync(Guid id);
     }

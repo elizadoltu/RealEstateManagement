@@ -1,6 +1,9 @@
-﻿namespace Application.DTOs
+﻿using Domain.Common;
+using MediatR;
+
+namespace Application.Use_Cases.ClientInquiries.Commands
 {
-    public class ClientInquiryDto
+    public class CreateClientInquiryCommand : IRequest<Result<Guid>>
     {
         public Guid InquiryId { get; set; }
         public Guid ClientId { get; set; }

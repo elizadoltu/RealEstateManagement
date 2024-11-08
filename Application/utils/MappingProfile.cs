@@ -2,6 +2,7 @@
 using AutoMapper;
 using Application.Use_Cases.Commands;
 using Domain.Entities;
+using Application.Use_Cases.ClientInquiries.Commands;
 
 namespace Application.utils
 {
@@ -15,6 +16,7 @@ namespace Application.utils
             CreateMap<User, UserDto>().ReverseMap();
 
             CreateMap<CreatePropertyListingCommand, PropertyListing>().ReverseMap();
+            CreateMap<CreateClientInquiryCommand, ClientInquiry>().ReverseMap();
         }
     }
 }

@@ -34,5 +34,20 @@ namespace Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public Task<Transaction> GetTransactionByPropertyIdAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Transaction>> GetTransactionsByBuyerId(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Transaction>> GetTransactionsBySellerId(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
