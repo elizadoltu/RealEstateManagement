@@ -3,8 +3,9 @@ using MediatR;
 
 namespace Application.Use_Cases.ClientInquiries.Commands
 {
-    public class CreateClientInquiryCommand : IRequest<Result<Guid>>
+    public class UpdateClientInquiryCommand : IRequest<Result<Guid>>
     {
+        public Guid InquiryId { get; set; }
         public Guid ClientId { get; set; }
         public List<string>? Types { get; set; }
         public double MinPrice { get; set; }

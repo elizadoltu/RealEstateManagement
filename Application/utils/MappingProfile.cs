@@ -16,7 +16,9 @@ namespace Application.utils
             CreateMap<User, UserDto>().ReverseMap();
 
             CreateMap<CreatePropertyListingCommand, PropertyListing>().ReverseMap();
+            CreateMap<UpdatePropertyListingCommand, PropertyListing>().ReverseMap();
             CreateMap<CreateClientInquiryCommand, ClientInquiry>().ReverseMap();
+            CreateMap<UpdateClientInquiryCommand, ClientInquiry>().ReverseMap();
         }
     }
 }

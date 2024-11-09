@@ -17,7 +17,7 @@ namespace RealEstateManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateInquiry([FromBody] CreateClientInquiryCommand command)
+        public async Task<IActionResult> CreateInquiry(CreateClientInquiryCommand command)
         {
             var result = await mediator.Send(command);
             if (result.IsSuccess)
@@ -43,6 +43,29 @@ namespace RealEstateManagement.Controllers
         {
             var result = await mediator.Send(new GetInquiryByClientIdQuery { ClientId = clientId });
             return Ok(result);
+        }
+
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateInquiry(Guid id, UpdateClientInquiryCommand command)
+        {
+            command.InquiryId = id;
+            var result = await mediator.Send(command);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            return BadRequest(result.ErrorMessage);
+        }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> DeleteInquiry(Guid id)
+        {
+            var result = await mediator.Send(new DeleteClientInquiryCommand { InquiryId = id });
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            return BadRequest(result.ErrorMessage);
         }
     }
 }

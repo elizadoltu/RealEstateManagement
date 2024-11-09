@@ -3,7 +3,6 @@ using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 
 namespace Infrastructure.Repositories
 {
@@ -40,13 +39,56 @@ namespace Infrastructure.Repositories
                 return Result<Guid>.Failure(errorMessage);
             }
         }
-        public Task UpdateInquiryAsync(ClientInquiry inquiry)
+        public async Task<Result<Guid>> UpdateInquiryAsync(ClientInquiry inquiry)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var existingInquiry = context.ClientInquiries.Find(inquiry.InquiryId);
+                if (existingInquiry != null)
+                {
+                    existingInquiry.InquiryId = inquiry.InquiryId;
+                    existingInquiry.ClientId = inquiry.ClientId;
+                    existingInquiry.Types = inquiry.Types;
+                    existingInquiry.MinPrice = inquiry.MinPrice;
+                    existingInquiry.MaxPrice = inquiry.MaxPrice;
+                    existingInquiry.MinSquareFootage = inquiry.MinSquareFootage;
+                    existingInquiry.MaxSquareFootage = inquiry.MaxSquareFootage;
+                    existingInquiry.NumberOfBedrooms = inquiry.NumberOfBedrooms;
+                    existingInquiry.NumberOfBathrooms = inquiry.NumberOfBathrooms;
+
+                    context.ClientInquiries.Update(existingInquiry);
+                    await context.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("Inquiry not found");
+                }
+                return Result<Guid>.Success(inquiry.InquiryId);
+            }
+            catch (Exception ex)
+            {
+                var errorMessage = ex.InnerException != null ? ex.InnerException.ToString() : ex.Message;
+                return Result<Guid>.Failure(errorMessage);
+            }
         }
-        public Task DeleteInquiryAsync(Guid id)
+        public async Task<Result<Guid>> DeleteInquiryAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var inquiry = await context.ClientInquiries.FindAsync(id);
+                if (inquiry != null)
+                {
+                    context.ClientInquiries.Remove(inquiry);
+                    await context.SaveChangesAsync();
+                    return Result<Guid>.Success(id);
+                }
+                return Result<Guid>.Failure("Inquiry not found");
+            }
+            catch (Exception ex)
+            {
+                var errorMessage = ex.InnerException != null ? ex.InnerException.ToString() : ex.Message;
+                return Result<Guid>.Failure(errorMessage);
+            }
         }
     }
 }
