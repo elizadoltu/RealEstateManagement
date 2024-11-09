@@ -50,30 +50,20 @@ namespace Infrastructure.Repositories
                 var existingListing = await context.PropertyListings.FindAsync(listing.PropertyId);
                 if (existingListing != null)
                 {
-                    existingListing.Address = listing.Address;
-                    existingListing.Type = listing.Type;
-                    existingListing.Price = listing.Price;
-                    existingListing.SquareFootage = listing.SquareFootage;
-                    existingListing.NumberOfBedrooms = listing.NumberOfBedrooms;
-                    existingListing.NumberOfBathrooms = listing.NumberOfBathrooms;
-                    existingListing.Description = listing.Description;
-                    existingListing.Status = listing.Status;
-                    existingListing.ListingDate = listing.ListingDate;
-                    existingListing.ImageURLs = listing.ImageURLs;
-
-                    context.PropertyListings.Update(existingListing);
+                    context.Entry(existingListing).CurrentValues.SetValues(listing);
                     await context.SaveChangesAsync();
+
+                    return Result<Guid>.Success(listing.PropertyId);
                 }
                 else
                 {
-                    throw new Exception($"Property listing with ID {listing.PropertyId} not found.");
+                    return Result<Guid>.Failure("Listing not found.");
                 }
-
-                return Result<Guid>.Success(listing.PropertyId);
             }
             catch (Exception ex)
             {
-                return Result<Guid>.Failure(ex.InnerException!.ToString());
+                var errorMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+                return Result<Guid>.Failure(errorMessage);
             }
             
         }

@@ -43,31 +43,22 @@ namespace Infrastructure.Repositories
         {
             try
             {
-                var existingInquiry = context.ClientInquiries.Find(inquiry.InquiryId);
+                var existingInquiry = await context.ClientInquiries.FindAsync(inquiry.InquiryId);
                 if (existingInquiry != null)
                 {
-                    existingInquiry.InquiryId = inquiry.InquiryId;
-                    existingInquiry.ClientId = inquiry.ClientId;
-                    existingInquiry.Types = inquiry.Types;
-                    existingInquiry.MinPrice = inquiry.MinPrice;
-                    existingInquiry.MaxPrice = inquiry.MaxPrice;
-                    existingInquiry.MinSquareFootage = inquiry.MinSquareFootage;
-                    existingInquiry.MaxSquareFootage = inquiry.MaxSquareFootage;
-                    existingInquiry.NumberOfBedrooms = inquiry.NumberOfBedrooms;
-                    existingInquiry.NumberOfBathrooms = inquiry.NumberOfBathrooms;
-
-                    context.ClientInquiries.Update(existingInquiry);
+                    context.Entry(existingInquiry).CurrentValues.SetValues(inquiry);
                     await context.SaveChangesAsync();
+
+                    return Result<Guid>.Success(inquiry.InquiryId);
                 }
                 else
                 {
-                    throw new Exception("Inquiry not found");
+                    return Result<Guid>.Failure("Inquiry not found.");
                 }
-                return Result<Guid>.Success(inquiry.InquiryId);
             }
             catch (Exception ex)
             {
-                var errorMessage = ex.InnerException != null ? ex.InnerException.ToString() : ex.Message;
+                var errorMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
                 return Result<Guid>.Failure(errorMessage);
             }
         }

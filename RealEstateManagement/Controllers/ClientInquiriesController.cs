@@ -48,7 +48,10 @@ namespace RealEstateManagement.Controllers
         [HttpPut("{id:guid}")]
         public async Task<IActionResult> UpdateInquiry(Guid id, UpdateClientInquiryCommand command)
         {
-            command.InquiryId = id;
+            if(id != command.InquiryId)
+            {
+                return BadRequest("Inquiry ID mismatch.");
+            }
             var result = await mediator.Send(command);
             if (result.IsSuccess)
             {
