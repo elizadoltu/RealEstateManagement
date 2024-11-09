@@ -22,17 +22,46 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
+
         public async Task<Transaction> AddTransactionAsync(Transaction transaction)
         {
-            throw new NotImplementedException();
+            await context.Transactions.AddAsync(transaction);
+            await context.SaveChangesAsync();
+            return transaction;
         }
+
         public async Task UpdateTransactionAsync(Transaction transaction)
         {
-            throw new NotImplementedException();
+            var existingTransaction = await context.Transactions.FindAsync(transaction.TransactionId);
+            if (existingTransaction != null)
+            {
+                existingTransaction.PropertyId = transaction.PropertyId;
+                existingTransaction.BuyerId = transaction.BuyerId;
+                existingTransaction.SellerId = transaction.SellerId;
+                existingTransaction.SalePrice = transaction.SalePrice;
+                existingTransaction.Status = transaction.Status;
+
+                context.Transactions.Update(existingTransaction);
+                await context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception($"Transaction with ID {transaction.TransactionId} not found.");
+            }
         }
+
         public async Task DeleteTransactionAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var transaction = await context.Transactions.FindAsync(id);
+            if (transaction != null)
+            {
+                context.Transactions.Remove(transaction);
+                await context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception($"Transaction with ID {id} not found.");
+            }
         }
 
         public Task<Transaction> GetTransactionByPropertyIdAsync(Guid id)
