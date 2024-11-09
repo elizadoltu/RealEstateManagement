@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 namespace Infrastructure.Repositories
@@ -13,17 +14,17 @@ namespace Infrastructure.Repositories
         {
             this.context = context;
         }
-        public Task<IEnumerable<ClientInquiry>> GetAllInquiriesAsync()
+        public async Task<IEnumerable<ClientInquiry>> GetAllInquiriesAsync()
         {
-            throw new NotImplementedException();
+            return await context.ClientInquiries.ToListAsync();
         }
-        public Task<ClientInquiry> GetInquiryByIdAsync(Guid id)
+        public async Task<ClientInquiry> GetInquiryByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await context.ClientInquiries.FindAsync(id);
         }
-        public Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid userId)
+        public async Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid userId)
         {
-            throw new NotImplementedException();
+            return await context.ClientInquiries.ToListAsync();
         }
         public async Task<Result<Guid>> AddInquiryAsync(ClientInquiry inquiry)
         {

@@ -1,4 +1,6 @@
-﻿using Application.Use_Cases.ClientInquiries.Commands;
+﻿using Application.DTOs;
+using Application.Use_Cases.ClientInquiries.Commands;
+using Application.Use_Cases.ClientInquiries.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +25,24 @@ namespace RealEstateManagement.Controllers
                 return Ok(result.Data);
             }
             return BadRequest(result.ErrorMessage);
+        }
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetInquiryById(Guid id)
+        {
+            var result = await mediator.Send(new GetInquiryByIdQuery { InquiryId = id });
+            return Ok(result);
+        }
+        [HttpGet]
+        public async Task<ActionResult<List<PropertyListingDTO>>> GetAllInquiriesAsync()
+        {
+            var result = await mediator.Send(new GetAllInquiriesQuery());
+            return Ok(result);
+        }
+        [HttpGet("client/{clientId:guid}")]
+        public async Task<ActionResult<List<ClientInquiryDto>>> GetInquiriesByClientId(Guid clientId)
+        {
+            var result = await mediator.Send(new GetInquiryByClientIdQuery { ClientId = clientId });
+            return Ok(result);
         }
     }
 }
