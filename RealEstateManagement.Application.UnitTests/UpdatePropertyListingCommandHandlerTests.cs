@@ -1,5 +1,6 @@
 using Application.Use_Cases.CommandHandlers;
 using Application.Use_Cases.Commands;
+using AutoMapper;
 using Domain.Common;
 using Domain.Entities;
 using Domain.Repositories;
@@ -11,10 +12,12 @@ namespace RealEstateManagement.Application.UnitTests
     public class UpdatePropertyListingCommandHandlerTests
     {
         private readonly IPropertyListingRepository repository;
+        private readonly IMapper mapper;
 
         public UpdatePropertyListingCommandHandlerTests()
         {
             repository = Substitute.For<IPropertyListingRepository>();
+            mapper = Substitute.For<IMapper>();
         }
 
         [Fact]
@@ -27,7 +30,7 @@ namespace RealEstateManagement.Application.UnitTests
             repository.UpdateListingAsync(propertyListing).Returns(Result<Guid>.Success(command.PropertyId));
 
             // Act
-            var handler = new UpdatePropertyListingCommandHandler(repository);
+            var handler = new UpdatePropertyListingCommandHandler(repository, mapper);
             var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
@@ -45,7 +48,7 @@ namespace RealEstateManagement.Application.UnitTests
             repository.UpdateListingAsync(propertyListing).Returns(Result<Guid>.Failure("Database error"));
 
             // Act
-            var handler = new UpdatePropertyListingCommandHandler(repository);
+            var handler = new UpdatePropertyListingCommandHandler(repository, mapper);
             var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
@@ -61,7 +64,7 @@ namespace RealEstateManagement.Application.UnitTests
             repository.GetListingByIdAsync(command.PropertyId).Returns((PropertyListing)null);
 
             // Act
-            var handler = new UpdatePropertyListingCommandHandler(repository);
+            var handler = new UpdatePropertyListingCommandHandler(repository, mapper);
             var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
