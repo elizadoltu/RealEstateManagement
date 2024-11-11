@@ -2,6 +2,11 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Domain.Entities;
+using Application.DTOs;
+using Application.Use_Cases.Queries;
+using Microsoft.AspNetCore.Components.Forms;
+using Application.Use_Cases.Transactions.Queries;
+using Domain.Common;
 
 namespace RealEstateManagement.Controllers
 {
@@ -67,5 +72,34 @@ namespace RealEstateManagement.Controllers
 
             return NoContent();
         }
+
+        [HttpGet]
+        public async Task<ActionResult<Result<List<TransactionDto>>>> GetAllTransactions()
+        {
+            var result = await _mediator.Send(new GetAllTransactionsQuery());
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TransactionDto>> GetTransactionById(Guid id)
+        {
+            var result = await _mediator.Send(new GetTransactionByIdQuery { TransactionId = id });
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+        }
+
     }
 }
