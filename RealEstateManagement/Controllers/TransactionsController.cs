@@ -7,6 +7,7 @@ using Application.Use_Cases.Queries;
 using Microsoft.AspNetCore.Components.Forms;
 using Application.Use_Cases.Transactions.Queries;
 using Domain.Common;
+using Application.Utils;
 
 namespace RealEstateManagement.Controllers
 {
@@ -101,5 +102,48 @@ namespace RealEstateManagement.Controllers
             }
         }
 
+        [HttpGet("property/{id}")]
+        public async Task<ActionResult<TransactionDto>> GetTransactionByPropertyId(Guid id)
+        {
+            var result = await _mediator.Send(new GetTransactionByPropertyIdQuery { PropertyId = id });
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpGet("buyer/{id}")]
+        public async Task<ActionResult<Result<PagedResult<TransactionDto>>>> GetTransactionsByBuyerId(Guid id, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            var result = await _mediator.Send(new GetTransactionsByBuyerIdQuery { BuyerId = id, Page = page, PageSize = pageSize });
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpGet("seller/{id}")]
+        public async Task<ActionResult<Result<PagedResult<TransactionDto>>>> GetTransactionsBySellerId(Guid id, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            var result = await _mediator.Send(new GetTransactionsBySellerIdQuery { SellerId = id, Page = page, PageSize = pageSize });
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            else
+            {
+                return NotFound();
+            }
+
+
+        }
     }
 }
