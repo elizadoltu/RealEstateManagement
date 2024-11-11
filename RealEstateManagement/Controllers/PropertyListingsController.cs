@@ -63,5 +63,19 @@ namespace RealEstateManagement.Controllers
             return Ok(result);
         }
 
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> DeletePropertyListing(Guid id)
+        {
+            var result = await mediator.Send(new DeletePropertyListingCommand { PropertyId = id });
+            if (result.IsSuccess)
+            {
+                return NoContent();
+            }
+            else
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+        }
+
     }
 }
