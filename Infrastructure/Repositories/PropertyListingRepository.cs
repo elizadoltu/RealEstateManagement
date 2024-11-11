@@ -68,9 +68,25 @@ namespace Infrastructure.Repositories
             
         }
 
-        public Task DeleteListingAsync(Guid id)
+        public async Task<Result<Guid>> DeleteListingAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var propertyListing = await context.PropertyListings.FindAsync(id);
+                if (propertyListing != null)
+                {
+                    context.PropertyListings.Remove(propertyListing);
+                    await context.SaveChangesAsync();
+                    return Result<Guid>.Success(id);
+                }
+                return Result<Guid>.Failure("Property Listing not found");
+            }
+            catch (Exception ex)
+            {
+                //var errorMessage = ex.InnerException != null ? ex.InnerException.ToString() : ex.Message;
+                //return Result<Guid>.Failure(errorMessage);
+                return Result<Guid>.Failure(ex.InnerException!.ToString());
+            }
         }
     }
 }
