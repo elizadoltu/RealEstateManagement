@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Common;
+using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
 
@@ -64,7 +65,7 @@ namespace Infrastructure.Repositories
             }
         }
 
-        public Task<Transaction> GetTransactionByPropertyIdAsync(Guid id)
+        public Task<Result<Transaction>> GetTransactionByPropertyIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }

@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Common;
+using Domain.Entities;
 
 namespace Domain.Repositories
 {
@@ -6,7 +7,7 @@ namespace Domain.Repositories
     {
         Task<IEnumerable<Transaction>> GetAllTransactionsAsync();
         Task<Transaction> GetTransactionByIdAsync(Guid id);
-        Task<Transaction> GetTransactionByPropertyIdAsync(Guid id);
+        Task<Result<Transaction>> GetTransactionByPropertyIdAsync(Guid id);
         Task<IEnumerable<Transaction>> GetTransactionsByBuyerId(Guid userId);
         Task<IEnumerable<Transaction>> GetTransactionsBySellerId(Guid userId);
         Task<Transaction> AddTransactionAsync(Transaction transaction);
