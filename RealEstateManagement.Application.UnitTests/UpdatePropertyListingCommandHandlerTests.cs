@@ -25,8 +25,7 @@ namespace RealEstateManagement.Application.UnitTests
         {
             // Arrange
             var command = GenerateUpdatePropertyListingCommand();
-            var propertyListing = GeneratePropertyListing(command);
-            repository.GetListingByIdAsync(command.PropertyId).Returns(propertyListing);
+            var propertyListing = mapper.Map<PropertyListing>(command);
             repository.UpdateListingAsync(propertyListing).Returns(Result<Guid>.Success(command.PropertyId));
 
             // Act
@@ -43,8 +42,7 @@ namespace RealEstateManagement.Application.UnitTests
         {
             // Arrange
             var command = GenerateUpdatePropertyListingCommand();
-            var propertyListing = GeneratePropertyListing(command);
-            repository.GetListingByIdAsync(command.PropertyId).Returns(propertyListing);
+            var propertyListing = mapper.Map<PropertyListing>(command);
             repository.UpdateListingAsync(propertyListing).Returns(Result<Guid>.Failure("Database error"));
 
             // Act
@@ -61,7 +59,8 @@ namespace RealEstateManagement.Application.UnitTests
         {
             // Arrange
             var command = GenerateUpdatePropertyListingCommand();
-            repository.GetListingByIdAsync(command.PropertyId).Returns((PropertyListing)null);
+            var propertyListing = mapper.Map<PropertyListing>(command);
+            repository.UpdateListingAsync(propertyListing).Returns(Result<Guid>.Failure("Listing not found."));
 
             // Act
             var handler = new UpdatePropertyListingCommandHandler(repository, mapper);
@@ -69,7 +68,7 @@ namespace RealEstateManagement.Application.UnitTests
 
             // Assert
             result.IsSuccess.Should().BeFalse();
-            result.ErrorMessage.Should().Be($"Property listing with ID {command.PropertyId} not found.");
+            result.ErrorMessage.Should().Be("Listing not found.");
         }
 
         private UpdatePropertyListingCommand GenerateUpdatePropertyListingCommand()
@@ -88,25 +87,6 @@ namespace RealEstateManagement.Application.UnitTests
                 ListingDate = DateTime.Now,
                 ImageURLs = "http://example.com/image1.jpg",
                 UserID = Guid.NewGuid()
-            };
-        }
-
-        private PropertyListing GeneratePropertyListing(UpdatePropertyListingCommand command)
-        {
-            return new PropertyListing
-            {
-                PropertyId = command.PropertyId,
-                Address = command.Address,
-                Type = command.Type,
-                Price = command.Price,
-                SquareFootage = command.SquareFootage,
-                NumberOfBedrooms = command.NumberOfBedrooms,
-                NumberOfBathrooms = command.NumberOfBathrooms,
-                Description = command.Description,
-                Status = command.Status,
-                ListingDate = command.ListingDate,
-                ImageURLs = command.ImageURLs,
-                UserID = command.UserID
             };
         }
     }

@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Persistance;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -14,13 +15,29 @@ namespace Infrastructure.Repositories
             this.context = context;
         }
 
-        public async Task<IEnumerable<Transaction>> GetAllTransactionsAsync() 
+        public async Task<Result<IEnumerable<Transaction>>> GetAllTransactionsAsync() 
         {
-            throw new NotImplementedException();
+            try
+            {
+                var transactions = await context.Transactions.ToListAsync();
+                return Result<IEnumerable<Transaction>>.Success(transactions);
+            }
+            catch (Exception ex)
+            {
+                return Result<IEnumerable<Transaction>>.Failure($"An error occurred while retrieving transactions: {ex.Message}");
+            }
         }
-        public async Task<Transaction> GetTransactionByIdAsync(Guid id)
+        public async Task<Result<Transaction>> GetTransactionByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var transaction = await context.Transactions.FindAsync(id);
+                return Result<Transaction>.Success(transaction);
+            }
+            catch (Exception ex)
+            {
+                return Result<Transaction>.Failure($"An error occurred while retrieving transaction: {ex.Message}");
+            }
         }
 
 
@@ -65,19 +82,31 @@ namespace Infrastructure.Repositories
             }
         }
 
-        public Task<Result<Transaction>> GetTransactionByPropertyIdAsync(Guid id)
+        public async Task<Result<Transaction>> GetTransactionByPropertyIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var transaction = await context.Transactions.FirstOrDefaultAsync(t => t.PropertyId == id);
+                if (transaction != null)
+                {
+                    return Result<Transaction>.Success(transaction);
+                }
+                return Result<Transaction>.Failure("Transaction not found.");
+            }
+            catch (Exception ex)
+            {
+                return Result<Transaction>.Failure($"An error occurred while retrieving the transaction: {ex.Message}");
+            }
         }
 
-        public Task<IEnumerable<Transaction>> GetTransactionsByBuyerId(Guid userId)
+        public async Task<IEnumerable<Transaction>> GetTransactionsByBuyerId(Guid userId)
         {
-            throw new NotImplementedException();
+            return await context.Transactions.Where(t => t.BuyerId == userId).ToListAsync();
         }
 
-        public Task<IEnumerable<Transaction>> GetTransactionsBySellerId(Guid userId)
+        public async Task<IEnumerable<Transaction>> GetTransactionsBySellerId(Guid userId)
         {
-            throw new NotImplementedException();
+            return await context.Transactions.Where(t => t.SellerId == userId).ToListAsync();
         }
     }
 }

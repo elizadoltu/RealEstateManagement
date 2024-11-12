@@ -67,7 +67,7 @@ namespace RealEstateManagement.Controllers
         public async Task<IActionResult> DeletePropertyListing(Guid id)
         {
             var result = await mediator.Send(new DeletePropertyListingCommand { PropertyId = id });
-            if (result.IsSuccess)
+            if (result.IsSuccess) 
             {
                 return NoContent();
             }

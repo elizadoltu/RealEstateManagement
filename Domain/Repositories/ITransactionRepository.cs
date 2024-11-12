@@ -5,8 +5,8 @@ namespace Domain.Repositories
 {
     public interface ITransactionRepository
     {
-        Task<IEnumerable<Transaction>> GetAllTransactionsAsync();
-        Task<Transaction> GetTransactionByIdAsync(Guid id);
+        Task<Result<IEnumerable<Transaction>>> GetAllTransactionsAsync();
+        Task<Result<Transaction>> GetTransactionByIdAsync(Guid id);
         Task<Result<Transaction>> GetTransactionByPropertyIdAsync(Guid id);
         Task<IEnumerable<Transaction>> GetTransactionsByBuyerId(Guid userId);
         Task<IEnumerable<Transaction>> GetTransactionsBySellerId(Guid userId);
