@@ -6,24 +6,24 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
-        "fileVersion": "4.11.0-3.24460.3 (5649376e)",
+        "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
       "results": [
         {
-          "ruleId": "S2325",
+          "ruleId": "S2699",
           "level": "warning",
-          "message": "Make 'BeAValidGuid' a static method.",
+          "message": "Add at least one assertion to this test case.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Application/Use%20Cases/PropertyListings/Commands/UpdatePropertyListingCommandValidator.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.IntegrationTests/UnitTest1.cs",
                 "region": {
-                  "startLine": 22,
-                  "startColumn": 22,
-                  "endLine": 22,
-                  "endColumn": 34
+                  "startLine": 6,
+                  "startColumn": 21,
+                  "endLine": 6,
+                  "endColumn": 26
                 }
               }
             }
@@ -34,18 +34,17 @@
         }
       ],
       "rules": {
-        "S2325": {
-          "id": "S2325",
-          "shortDescription": "Methods and properties that don't access instance data should be static",
-          "fullDescription": "Methods and properties that don’t access instance data should be marked as static for the following reasons:",
+        "S2699": {
+          "id": "S2699",
+          "shortDescription": "Tests should include assertions",
+          "fullDescription": "The rule targets test methods that lack an assertion and consist solely of an action and, optionally, a setup.",
           "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2325",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2699",
           "properties": {
-            "category": "Minor Code Smell",
+            "category": "Blocker Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "MainSourceScope",
               "TestSourceScope",
               "SonarWay"
             ]

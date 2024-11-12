@@ -1,6 +1,10 @@
-°
-ïD:\Facultate\dotnet\RealEstateManagement\RealEstateManagement.IntegrationTests\obj\Debug\net8.0\RealEstateManagement.IntegrationTests.AssemblyInfo.csutf-8£
-óD:\Facultate\dotnet\RealEstateManagement\RealEstateManagement.IntegrationTests\obj\Debug\net8.0\RealEstateManagement.IntegrationTests.GlobalUsings.g.csutf-8}
-rC:\Users\ELIZA\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.csutf-8ö
-éD:\Facultate\dotnet\RealEstateManagement\RealEstateManagement.IntegrationTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8d
-[D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement.IntegrationTests\UnitTest1.csutf-8
+¨
+†C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.MvcApplicationPartsAssemblyInfo.csutf-8ô
+çC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.AssemblyInfo.csutf-8£
+óC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8õ
+èC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.GlobalUsings.g.csutf-8k
+bC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Program.csutf-8
+vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\UsersController.csutf-8Ü
+}C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.csutf-8ã
+ÅC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.csutf-8ä
+ÄC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.csutf-8

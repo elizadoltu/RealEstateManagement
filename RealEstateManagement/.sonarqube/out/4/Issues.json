@@ -6,7 +6,7 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
-        "fileVersion": "4.11.0-3.24460.3 (5649376e)",
+        "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 48,
                   "startColumn": 64,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 48,
                   "startColumn": 13,
@@ -60,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 55,
                   "startColumn": 64,
@@ -81,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 55,
                   "startColumn": 13,
@@ -96,83 +96,17 @@
           }
         },
         {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 72,
-                  "endLine": 64,
-                  "endColumn": 93
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8620",
-          "level": "warning",
-          "message": "Argument of type 'Task<PropertyListing>' cannot be used for parameter 'value' of type 'Task<PropertyListing?>' in 'ConfiguredCall SubstituteExtensions.Returns<PropertyListing?>(Task<PropertyListing?> value, PropertyListing? returnThis, params PropertyListing?[] returnThese)' due to differences in the nullability of reference types.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 13,
-                  "endLine": 64,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1829",
-          "level": "note",
-          "message": "Use the \"Count\" property instead of Enumerable.Count()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 13,
-                  "endLine": 38,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "PropertyNameKey": "Count"
-            }
-          }
-        },
-        {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GenerateCreatePropertyListingCommand' does not access instance data and can be marked as static",
+          "message": "Member 'GenerateUpdatePropertyListingCommand' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
                 "region": {
-                  "startLine": 60,
+                  "startLine": 74,
                   "startColumn": 46,
-                  "endLine": 60,
+                  "endLine": 74,
                   "endColumn": 82
                 }
               }
@@ -189,7 +123,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
                 "region": {
                   "startLine": 102,
                   "startColumn": 34,
@@ -206,32 +140,11 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 33,
-                  "endLine": 78,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
           "message": "Member 'GenerateClientInquiries' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
                 "region": {
                   "startLine": 71,
                   "startColumn": 37,
@@ -248,11 +161,53 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+          "message": "Member 'GenerateCreatePropertyListingCommand' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 46,
+                  "endLine": 60,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
           "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 33,
+                  "endLine": 78,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 59,
                   "startColumn": 33,
@@ -273,7 +228,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 78,
                   "startColumn": 36,
@@ -294,11 +249,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
                 "region": {
-                  "startLine": 86,
+                  "startLine": 38,
                   "startColumn": 13,
-                  "endLine": 86,
+                  "endLine": 38,
                   "endColumn": 27
                 }
               }
@@ -318,7 +273,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 85,
                   "startColumn": 34,
@@ -339,7 +294,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 69,
                   "startColumn": 31,
@@ -354,45 +309,27 @@
           }
         },
         {
-          "ruleId": "CA1822",
+          "ruleId": "CA1829",
           "level": "note",
-          "message": "Member 'GenerateUpdatePropertyListingCommand' does not access instance data and can be marked as static",
+          "message": "Use the \"Count\" property instead of Enumerable.Count()",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
                 "region": {
-                  "startLine": 75,
-                  "startColumn": 46,
-                  "endLine": 75,
-                  "endColumn": 82
+                  "startLine": 86,
+                  "startColumn": 13,
+                  "endLine": 86,
+                  "endColumn": 27
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 33,
-                  "endLine": 94,
-                  "endColumn": 56
-                }
-              }
+            "warningLevel": 1,
+            "customProperties": {
+              "PropertyNameKey": "Count"
             }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -402,7 +339,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
                 "region": {
                   "startLine": 126,
                   "startColumn": 39,

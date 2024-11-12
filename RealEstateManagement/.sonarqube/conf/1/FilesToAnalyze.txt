@@ -1,39 +1,7 @@
-﻿D:\Facultate\dotnet\RealEstateManagement\Application\DependencyInjection.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\DTOs\ClientInquiryDto.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\DTOs\PropertyListingDto.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\DTOs\TransactionDto.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\DTOs\UserDto.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\CommandHandlers\CreateClientInquiryCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\CommandHandlers\DeleteClientInquiryCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\CommandHandlers\UpdateClientInquiryCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Commands\CreateClientInquiryCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Commands\DeleteClientInquiryCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Commands\UpdateClientInquiryCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Queries\GetAllInquiriesQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Queries\GetInquiryByClientIdQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\Queries\GetInquiryByIdQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\QueryHandler\GetAllInquiriesQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\QueryHandler\GetInquiryByClientIdQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\ClientInquiries\QueryHandler\GetInquiryByIdQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\CommandHandlers\CreatePropertyListingCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\CommandHandlers\DeletePropertyListingCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\CommandHandlers\UpdatePropertyListingCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Commands\CreatePropertyListingCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Commands\CreatePropertyListingCommandValidator.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Commands\DeletePropertyListingCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Commands\UpdatePropertyListingCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Commands\UpdatePropertyListingCommandValidator.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Queries\GetAllPropertyListingQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\Queries\GetListingByIdQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\QueryHandlers\GetAllPropertyListingQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\PropertyListings\QueryHandlers\GetListingByIdQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\CommandHandlers\AddTransactionCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\CommandHandlers\DeleteTransactionCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\CommandHandlers\UpdateTransactionCommandHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\Commands\AddTransactionCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\Commands\DeleteTransactionCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\Commands\UpdateTransactionCommand.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\QueriesHandlers\GetTransactionByPropertyIdQueryHandler.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\Use Cases\Transactions\Queries\GetTransactionByPropertyIdQuery.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\utils\MappingProfile.cs
-D:\Facultate\dotnet\RealEstateManagement\Application\ValidationBehavior.cs
+﻿C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement.IntegrationTests\UnitTest1.cs
+C:\Users\marin\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\marin\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\marin\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\marin\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\marin\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\marin\.nuget\packages\xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.utility.netcoreapp10.dll

@@ -6,7 +6,7 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
-        "fileVersion": "4.11.0-3.24460.3 (5649376e)",
+        "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Domain/Entities/User.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/Domain/Entities/User.cs",
                 "region": {
                   "startLine": 11,
                   "startColumn": 9,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Domain/Repositories/IPropertyListingRepository.cs",
+                "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/Domain/Repositories/IPropertyListingRepository.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 9,
