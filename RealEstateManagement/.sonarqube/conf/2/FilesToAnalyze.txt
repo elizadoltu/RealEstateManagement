@@ -1,6 +1,6 @@
 ﻿D:\Facultate\dotnet\RealEstateManagement\Infrastructure\DependencyInjection.cs
-D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241111144500_InitialCreate.cs
-D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241111144500_InitialCreate.Designer.cs
+D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241112100113_InitialCreate.cs
+D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241112100113_InitialCreate.Designer.cs
 D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\ApplicationDbContextModelSnapshot.cs
 D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.cs
 D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.cs

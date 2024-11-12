@@ -2151,8 +2151,8 @@ IsRequired``8 B
 ;bb 
 }cc 	
 }dd 
-}ee ö”
-bD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241111144500_InitialCreate.cs
+}ee õ”
+bD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241112100113_InitialCreate.cs
 	namespace 	
 Infrastructure
  
@@ -2395,10 +2395,10 @@ PrimaryKey $
 $str&&= E
 ,&&E F
 nullable&&G O
-:&&O P
-false&&Q V
-)&&V W
-,&&W X
+:&&O P
+true&&Q U
+)&&U V
+,&&V W
 MinPrice'' 
 ='' 
 table'' $

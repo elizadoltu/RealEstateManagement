@@ -164,6 +164,90 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+          "message": "Member 'GenerateCreatePropertyListingCommand' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 46,
+                  "endLine": 60,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 34,
+                  "endLine": 102,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 33,
+                  "endLine": 78,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GenerateClientInquiries' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 37,
+                  "endLine": 71,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
           "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
           "locations": [
             {
@@ -204,48 +288,6 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 33,
-                  "endLine": 78,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GenerateCreatePropertyListingCommand' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 46,
-                  "endLine": 60,
-                  "endColumn": 82
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1829",
           "level": "note",
           "message": "Use the \"Count\" property instead of Enumerable.Count()",
@@ -276,11 +318,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
-                  "startLine": 102,
+                  "startLine": 85,
                   "startColumn": 34,
-                  "endLine": 102,
+                  "endLine": 85,
                   "endColumn": 58
                 }
               }
@@ -293,37 +335,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GenerateClientInquiries' does not access instance data and can be marked as static",
+          "message": "Member 'GenerateClientInquiry' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
                 "region": {
-                  "startLine": 71,
-                  "startColumn": 37,
-                  "endLine": 71,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GeneratePropertyListings' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
-                "region": {
-                  "startLine": 126,
-                  "startColumn": 39,
-                  "endLine": 126,
-                  "endColumn": 63
+                  "startLine": 69,
+                  "startColumn": 31,
+                  "endLine": 69,
+                  "endColumn": 52
                 }
               }
             }
@@ -377,37 +398,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GenerateClientInquiry' does not access instance data and can be marked as static",
+          "message": "Member 'GeneratePropertyListings' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
                 "region": {
-                  "startLine": 69,
-                  "startColumn": 31,
-                  "endLine": 69,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 34,
-                  "endLine": 85,
-                  "endColumn": 58
+                  "startLine": 126,
+                  "startColumn": 39,
+                  "endLine": 126,
+                  "endColumn": 63
                 }
               }
             }

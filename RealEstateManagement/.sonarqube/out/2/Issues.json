@@ -265,6 +265,27 @@
           }
         },
         {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Repositories/PropertyListingRepository.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 17,
+                  "endLine": 86,
+                  "endColumn": 108
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S4487",
           "level": "warning",
           "message": "Remove this unread private field 'context' or refactor the code to use its value.",
@@ -292,7 +313,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 19,
                   "startColumn": 23,
@@ -305,7 +326,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 53,
                   "startColumn": 41,
@@ -316,7 +337,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 80,
                   "startColumn": 41,
@@ -327,7 +348,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 108,
                   "startColumn": 41,
@@ -338,7 +359,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 114,
                   "startColumn": 41,
@@ -349,7 +370,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
                   "startLine": 158,
                   "startColumn": 23,
@@ -368,440 +389,6 @@
               "3": null,
               "4": null
             }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'uuid_generate_v4()' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 97,
-                  "endLine": 22,
-                  "endColumn": 117
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 100,
-                  "endLine": 36,
-                  "endColumn": 120
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 101,
-                  "endLine": 61,
-                  "endColumn": 121
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 104,
-                  "endLine": 89,
-                  "endColumn": 124
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'double precision' 11 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 59,
-                  "endLine": 39,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 59,
-                  "endLine": 40,
-                  "endColumn": 77
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 67,
-                  "endLine": 41,
-                  "endColumn": 85
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 67,
-                  "endLine": 42,
-                  "endColumn": 85
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 67,
-                  "endLine": 43,
-                  "endColumn": 85
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 68,
-                  "endLine": 44,
-                  "endColumn": 86
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 56,
-                  "endLine": 64,
-                  "endColumn": 74
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 65,
-                  "startColumn": 64,
-                  "endLine": 65,
-                  "endColumn": 82
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 67,
-                  "endLine": 66,
-                  "endColumn": 85
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 68,
-                  "endLine": 67,
-                  "endColumn": 86
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 60,
-                  "endLine": 93,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null,
-              "7": null,
-              "8": null,
-              "9": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'UserId' 5 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 42,
-                  "endLine": 54,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 42,
-                  "endLine": 81,
-                  "endColumn": 50
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 109,
-                  "startColumn": 42,
-                  "endLine": 109,
-                  "endColumn": 50
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 115,
-                  "startColumn": 42,
-                  "endLine": 115,
-                  "endColumn": 50
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 122,
-                  "startColumn": 25,
-                  "endLine": 122,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'PropertyListings' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 23,
-                  "endLine": 58,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 41,
-                  "endLine": 102,
-                  "endColumn": 59
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 126,
-                  "startColumn": 24,
-                  "endLine": 126,
-                  "endColumn": 42
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 155,
-                  "startColumn": 23,
-                  "endLine": 155,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'Transactions' 5 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 23,
-                  "endLine": 86,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 131,
-                  "startColumn": 24,
-                  "endLine": 131,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 136,
-                  "startColumn": 24,
-                  "endLine": 136,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 141,
-                  "startColumn": 24,
-                  "endLine": 141,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241111144500_InitialCreate.cs",
-                "region": {
-                  "startLine": 152,
-                  "startColumn": 23,
-                  "endLine": 152,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null
-            }
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Repositories/PropertyListingRepository.cs",
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 17,
-                  "endLine": 86,
-                  "endColumn": 108
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -866,24 +453,416 @@
           }
         },
         {
-          "ruleId": "S927",
+          "ruleId": "S1192",
           "level": "warning",
-          "message": "Rename parameter 'userId' to 'clientId' to match the interface declaration.",
+          "message": "Define a constant instead of using this literal 'uuid_generate_v4()' 4 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Repositories/ClientInquiryRepository.cs",
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
                 "region": {
-                  "startLine": 29,
-                  "startColumn": 83,
-                  "endLine": 29,
-                  "endColumn": 89
+                  "startLine": 22,
+                  "startColumn": 97,
+                  "endLine": 22,
+                  "endColumn": 117
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 100,
+                  "endLine": 36,
+                  "endColumn": 120
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 101,
+                  "endLine": 61,
+                  "endColumn": 121
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 104,
+                  "endLine": 89,
+                  "endColumn": 124
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'double precision' 11 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 59,
+                  "endLine": 39,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 59,
+                  "endLine": 40,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 67,
+                  "endLine": 41,
+                  "endColumn": 85
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 67,
+                  "endLine": 42,
+                  "endColumn": 85
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 67,
+                  "endLine": 43,
+                  "endColumn": 85
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 68,
+                  "endLine": 44,
+                  "endColumn": 86
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 56,
+                  "endLine": 64,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 64,
+                  "endLine": 65,
+                  "endColumn": 82
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 67,
+                  "endLine": 66,
+                  "endColumn": 85
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 68,
+                  "endLine": 67,
+                  "endColumn": 86
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 60,
+                  "endLine": 93,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'UserId' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 42,
+                  "endLine": 54,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 42,
+                  "endLine": 81,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 42,
+                  "endLine": 109,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 42,
+                  "endLine": 115,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 25,
+                  "endLine": 122,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'PropertyListings' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 23,
+                  "endLine": 58,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 41,
+                  "endLine": 102,
+                  "endColumn": 59
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 24,
+                  "endLine": 126,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 23,
+                  "endLine": 155,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Transactions' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 23,
+                  "endLine": 86,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 24,
+                  "endLine": 131,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 24,
+                  "endLine": 136,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 24,
+                  "endLine": 141,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Migrations/20241112100113_InitialCreate.cs",
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 23,
+                  "endLine": 152,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
           }
         },
         {
@@ -899,6 +878,27 @@
                   "startColumn": 51,
                   "endLine": 27,
                   "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'userId' to 'clientId' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Facultate/dotnet/RealEstateManagement/Infrastructure/Repositories/ClientInquiryRepository.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 83,
+                  "endLine": 29,
+                  "endColumn": 89
                 }
               }
             }

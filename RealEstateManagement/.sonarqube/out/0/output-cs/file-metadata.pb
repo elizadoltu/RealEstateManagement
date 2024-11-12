@@ -6,8 +6,8 @@ OD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs
 VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionRepository.csutf-8c
 ZD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.csutf-8a
 XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.csutf-8I
-@D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\User.csutf-8P
-GD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.csutf-8T
-KD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\PropertyListing.csutf-8R
+@D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\User.csutf-8T
+KD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\PropertyListing.csutf-8P
+GD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.csutf-8R
 ID:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.csutf-8I
 @D:\Facultate\dotnet\RealEstateManagement\Domain\Common\Result.csutf-8

@@ -1,4 +1,25 @@
-·
+‘
+ZD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+
+ /
+
++ >
+
+		 1
+
+		7 9
+
+ *
+
+; B
+
+ -
+
+> E
+
+ -
+
+3 5·
 OD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs
 
  $
@@ -27,24 +48,44 @@ OD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs
 
  
 
-" $ù
-GD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.cs
+" $ò
+VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
 
- 
+ +
 
- !
+' >
 
- 
+		 1
 
- 
-
- 
-
-		 
+		7 9
 
 
 
- Í
+" A
+
+
+
+G I
+
+' ?
+
+E K
+
+' @
+
+F L
+
+ -
+
+: E
+
+ #
+
+0 ;
+
+ #
+
+) +Í
 XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
 
  -
@@ -90,65 +131,7 @@ XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepo
 
 
 
-$ 3ò
-VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
-
- +
-
-' >
-
-		 1
-
-		7 9
-
-
-
-" A
-
-
-
-G I
-
-' ?
-
-E K
-
-' @
-
-F L
-
- -
-
-: E
-
- #
-
-0 ;
-
- #
-
-) +‘
-ZD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
-
- /
-
-+ >
-
-		 1
-
-		7 9
-
- *
-
-; B
-
- -
-
-> E
-
- -
-
-3 5√
+$ 3√
 ID:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 
  
@@ -171,7 +154,24 @@ ID:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 
  &
 
- 'È
+ 'ù
+GD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.cs
+
+ 
+
+ !
+
+ 
+
+ 
+
+ 
+
+		 
+
+
+
+ È
 KD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\PropertyListing.cs
 
   
