@@ -10,7 +10,7 @@ namespace Application.utils
     {
         public MappingProfile()
         {
-            CreateMap<PropertyListing, PropertyListingDTO>().ReverseMap();
+            CreateMap<PropertyListing, PropertyListingDto>().ReverseMap();
             CreateMap<ClientInquiry, ClientInquiryDto>().ReverseMap();
             CreateMap<Transaction, TransactionDto>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();

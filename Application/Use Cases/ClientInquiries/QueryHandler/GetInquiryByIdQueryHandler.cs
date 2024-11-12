@@ -20,13 +20,12 @@ namespace Application.Use_Cases.ClientInquiries.QueryHandler
         public async Task<ClientInquiryDto> Handle(GetInquiryByIdQuery request, CancellationToken cancellationToken)
         {
             var inquiry = await repository.GetInquiryByIdAsync(request.InquiryId);
-
             if (inquiry == null)
             {
-                throw new Exception($"Client inquiry with ID {request.InquiryId} not found.");
+                throw new KeyNotFoundException($"Client inquiry with ID {request.InquiryId} not found.");
             }
-
             return mapper.Map<ClientInquiryDto>(inquiry);
+
         }
     }
 }

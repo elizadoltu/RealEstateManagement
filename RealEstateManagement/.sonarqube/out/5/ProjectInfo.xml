@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>RealEstateManagement.IntegrationTests</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Test</ProjectType>
+  <ProjectGuid>2fff5e2b-8e4b-4bd2-a1fd-84f72ca9aca4</ProjectGuid>
+  <FullPath>D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement.IntegrationTests\RealEstateManagement.IntegrationTests.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\.sonarqube\conf\5\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\.sonarqube\out\5\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\.sonarqube\out\5</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

@@ -19,7 +19,12 @@ namespace Infrastructure.Repositories
         }
         public async Task<ClientInquiry> GetInquiryByIdAsync(Guid id)
         {
-            return await context.ClientInquiries.FindAsync(id);
+            var inquiry = await context.ClientInquiries.FindAsync(id);
+            if (inquiry == null)
+            {
+                throw new KeyNotFoundException($"Client inquiry with ID {id} not found.");
+            }
+            return inquiry;
         }
         public async Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid userId)
         {

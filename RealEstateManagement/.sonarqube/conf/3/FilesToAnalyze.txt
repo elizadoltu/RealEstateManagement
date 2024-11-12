@@ -1,0 +1,13 @@
+﻿D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Program.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.GlobalUsings.g.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.AssemblyInfo.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\obj\Debug\net8.0\RealEstateManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\appsettings.Development.json
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\appsettings.json
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\RealEstateManagement.http
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\Properties\launchSettings.json

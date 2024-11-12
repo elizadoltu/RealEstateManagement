@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Application.Use_Cases.Queries
 {
-    public class GetListingByIdQuery : IRequest<PropertyListingDTO>
+    public class GetListingByIdQuery : IRequest<PropertyListingDto>
     {
         public Guid PropertyId { get; set; }
     }

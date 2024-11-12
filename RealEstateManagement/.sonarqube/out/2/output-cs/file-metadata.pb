@@ -1,0 +1,13 @@
+r
+gD:\Facultate\dotnet\RealEstateManagement\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.csutf-8‚
+wD:\Facultate\dotnet\RealEstateManagement\Infrastructure\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8t
+iD:\Facultate\dotnet\RealEstateManagement\Infrastructure\obj\Debug\net8.0\Infrastructure.GlobalUsings.g.csutf-8_
+VD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Repositories\UserRepository.csutf-8f
+]D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Repositories\TransactionRepository.csutf-8j
+aD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Repositories\PropertyListingRepository.csutf-8h
+_D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.csutf-8d
+[D:\Facultate\dotnet\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.csutf-8v
+kD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241111144500_InitialCreate.Designer.csutf-8r
+gD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\ApplicationDbContextModelSnapshot.csutf-8k
+bD:\Facultate\dotnet\RealEstateManagement\Infrastructure\Migrations\20241111144500_InitialCreate.csutf-8W
+ND:\Facultate\dotnet\RealEstateManagement\Infrastructure\DependencyInjection.csutf-8

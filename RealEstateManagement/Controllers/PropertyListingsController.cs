@@ -50,14 +50,14 @@ namespace RealEstateManagement.Controllers
 
         }
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<PropertyListingDTO>> GetListingByIdAsync(Guid id)
+        public async Task<ActionResult<PropertyListingDto>> GetListingByIdAsync(Guid id)
         {
             var result = await mediator.Send(new GetListingByIdQuery { PropertyId = id });
             return Ok(result);
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PropertyListingDTO>>> GetAllPropertyListingsAsync()
+        public async Task<ActionResult<List<PropertyListingDto>>> GetAllPropertyListingsAsync()
         {
             var result = await mediator.Send(new GetAllPropertyListingQuery());
             return Ok(result);

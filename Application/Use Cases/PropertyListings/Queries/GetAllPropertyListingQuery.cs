@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Application.Use_Cases.Queries
 {
-    public class GetAllPropertyListingQuery : IRequest<List<PropertyListingDTO>>
+    public class GetAllPropertyListingQuery : IRequest<List<PropertyListingDto>>
     {
     }
 }

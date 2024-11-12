@@ -1,0 +1,9 @@
+﻿D:\Facultate\dotnet\RealEstateManagement\Domain\Common\Result.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\PropertyListing.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\User.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+D:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs

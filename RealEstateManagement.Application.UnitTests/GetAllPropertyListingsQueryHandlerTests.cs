@@ -88,9 +88,9 @@ namespace RealEstateManagement.Application.UnitTests
 
         private void GeneratePropertyListingsDto(List<PropertyListing> propertyListings)
         {
-            mapper.Map<List<PropertyListingDTO>>(propertyListings).Returns(new List<PropertyListingDTO>
+            mapper.Map<List<PropertyListingDto>>(propertyListings).Returns(new List<PropertyListingDto>
             {
-                new PropertyListingDTO
+                new PropertyListingDto
                 {
                     PropertyId = propertyListings[0].PropertyId,
                     Address = propertyListings[0].Address,
@@ -105,7 +105,7 @@ namespace RealEstateManagement.Application.UnitTests
                     ImageURLs = propertyListings[0].ImageURLs,
                     UserID = propertyListings[0].UserID
                 },
-                new PropertyListingDTO
+                new PropertyListingDto
                 {
                     PropertyId = propertyListings[1].PropertyId,
                     Address = propertyListings[1].Address,

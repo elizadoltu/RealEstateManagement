@@ -1,0 +1,1 @@
+D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\.sonarqube\out\1

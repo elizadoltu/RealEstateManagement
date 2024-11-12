@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Use_Cases.QueryHandlers
 {
-    public class GetListingByIdQueryHandler : IRequestHandler<GetListingByIdQuery, PropertyListingDTO>
+    public class GetListingByIdQueryHandler : IRequestHandler<GetListingByIdQuery, PropertyListingDto>
     {
         private readonly IMapper mapper;
         private readonly IPropertyListingRepository repository;
@@ -18,16 +18,14 @@ namespace Application.Use_Cases.QueryHandlers
             this.repository = repository;
         }
 
-        public async Task<PropertyListingDTO> Handle(GetListingByIdQuery request, CancellationToken cancellationToken)
+        public async Task<PropertyListingDto> Handle(GetListingByIdQuery request, CancellationToken cancellationToken)
         {
             var listing = await repository.GetListingByIdAsync(request.PropertyId);
-
             if (listing == null)
             {
-                throw new Exception($"Property listing with ID {request.PropertyId} not found.");
+                throw new KeyNotFoundException($"Property listing with ID {request.PropertyId} not found.");
             }
-
-            return mapper.Map<PropertyListingDTO>(listing);
+            return mapper.Map<PropertyListingDto>(listing);
         }
     }
 }

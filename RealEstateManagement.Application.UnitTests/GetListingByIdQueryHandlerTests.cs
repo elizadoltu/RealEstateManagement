@@ -29,7 +29,7 @@ namespace RealEstateManagement.Application.UnitTests
             repository.GetListingByIdAsync(propertyId).Returns(propertyListing);
             var query = new GetListingByIdQuery { PropertyId = propertyId };
             var propertyListingDto = GeneratePropertyListingDto(propertyListing);
-            mapper.Map<PropertyListingDTO>(propertyListing).Returns(propertyListingDto);
+            mapper.Map<PropertyListingDto>(propertyListing).Returns(propertyListingDto);
 
             // Act
             var handler = new GetListingByIdQueryHandler(mapper, repository);
@@ -75,9 +75,9 @@ namespace RealEstateManagement.Application.UnitTests
             };
         }
 
-        private PropertyListingDTO GeneratePropertyListingDto(PropertyListing propertyListing)
+        private PropertyListingDto GeneratePropertyListingDto(PropertyListing propertyListing)
         {
-            return new PropertyListingDTO
+            return new PropertyListingDto
             {
                 PropertyId = propertyListing.PropertyId,
                 Address = propertyListing.Address,

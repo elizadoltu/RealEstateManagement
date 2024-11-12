@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Application.Use_Cases.QueryHandlers
 {
-    public class GetAllPropertyListingQueryHandler : IRequestHandler<GetAllPropertyListingQuery, List<PropertyListingDTO>>
+    public class GetAllPropertyListingQueryHandler : IRequestHandler<GetAllPropertyListingQuery, List<PropertyListingDto>>
     {
         private readonly IMapper _mapper;
         private readonly IPropertyListingRepository _repository;
@@ -17,10 +17,10 @@ namespace Application.Use_Cases.QueryHandlers
             _repository = repository;
         }
 
-        public async Task<List<PropertyListingDTO>> Handle(GetAllPropertyListingQuery request, CancellationToken cancellationToken)
+        public async Task<List<PropertyListingDto>> Handle(GetAllPropertyListingQuery request, CancellationToken cancellationToken)
         {
             var listings = await _repository.GetAllListingsAsync();
-            return listings.Select(listing => _mapper.Map<PropertyListingDTO>(listing)).ToList();
+            return listings.Select(listing => _mapper.Map<PropertyListingDto>(listing)).ToList();
         }
     }
 }

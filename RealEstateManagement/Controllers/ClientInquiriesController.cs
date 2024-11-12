@@ -33,7 +33,7 @@ namespace RealEstateManagement.Controllers
             return Ok(result);
         }
         [HttpGet]
-        public async Task<ActionResult<List<PropertyListingDTO>>> GetAllInquiriesAsync()
+        public async Task<ActionResult<List<PropertyListingDto>>> GetAllInquiriesAsync()
         {
             var result = await mediator.Send(new GetAllInquiriesQuery());
             return Ok(result);
