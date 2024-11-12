@@ -22,5 +22,5 @@ namespace Application.Use_Cases.ClientInquiries.QueryHandler
             var inquiries = await _repository.GetInquiriesByClientId(request.ClientId);
             return inquiries.Select(inquiry => _mapper.Map<ClientInquiryDto>(inquiry)).ToList();
         }
-    }       
+    }
 }

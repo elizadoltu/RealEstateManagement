@@ -28,7 +28,9 @@ namespace Infrastructure.Repositories
         }
         public async Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid userId)
         {
-            return await context.ClientInquiries.ToListAsync();
+            return await context.ClientInquiries
+                                .Where(inquiry => inquiry.ClientId == userId)  
+                                .ToListAsync();
         }
         public async Task<Result<Guid>> AddInquiryAsync(ClientInquiry inquiry)
         {
