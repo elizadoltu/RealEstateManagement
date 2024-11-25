@@ -1,6 +1,6 @@
-π
+”
 
-OD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IUserRepository.cs
 	namespace 	
 Domain
  
@@ -91,8 +91,8 @@ OD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IUserRepository.cs
 )$ %
 ;% &
 } 
-} ç
-VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+} ã
+pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
 	namespace 	
 Domain
  
@@ -105,26 +105,32 @@ VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionReposi
 ITransactionRepository +
 { 
 Task 
-< 
-IEnumerable 
-< 
-Transaction $
->$ %
->% &#
-GetAllTransactionsAsync' >
-(> ?
-)? @
-;@ A
+< 
+Result 
+< 
+IEnumerable 
+<  
+Transaction  +
+>+ ,
+>, -
+>- .#
+GetAllTransactionsAsync/ F
+(F G
+)G H
+;H I
 Task		 
-<		 
-Transaction		 
->		 #
-GetTransactionByIdAsync		 1
-(		1 2
-Guid		2 6
-id		7 9
-)		9 :
-;		: ;
+<		 
+Result		 
+<		 
+Transaction		 
+>		  
+>		  !#
+GetTransactionByIdAsync		" 9
+(		9 :
+Guid		: >
+id		? A
+)		A B
+;		B C
 Task
 
  
@@ -215,8 +221,8 @@ VD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\ITransactionReposi
 )+ ,
 ;, -
 } 
-} é
-ZD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+} ®
+tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
 	namespace 	
 Domain
  
@@ -289,8 +295,8 @@ ZD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IPropertyListingRe
 )5 6
 ;6 7
 } 
-} ˛
-XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+} ò
+rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
 	namespace 	
 Domain
  
@@ -402,9 +408,8 @@ XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepo
 )5 6
 ;6 7
 } 
-} Î
-
-@D:\Facultate\dotnet\RealEstateManagement\Domain\Entities\User.cs
+} Ö
+ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\User.cs
 	namespace 	
 Domain
  
@@ -508,8 +513,8 @@ XD:\Facultate\dotnet\RealEstateManagement\Domain\Repositories\IClientInquiryRepo
 
 @ A
 } 
-} √	
-GD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\Transaction.cs
+} ›	
+aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\Transaction.cs
 	namespace 	
 Domain
  
@@ -598,8 +603,8 @@ PropertyId 
 
 * +
 } 
-} √
-KD:\Facultate\dotnet\RealEstateManagement\Domain\Entities\PropertyListing.cs
+} ›
+eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\PropertyListing.cs
 	namespace 	
 Domain
  
@@ -744,8 +749,8 @@ PropertyId 
 ;% &
 }' (
 } 
-} È
-ID:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+} É
+cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 	namespace 	
 Domain
  
@@ -861,8 +866,8 @@ ID:\Facultate\dotnet\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 ;2 3
 }4 5
 } 
-} —
-@D:\Facultate\dotnet\RealEstateManagement\Domain\Common\Result.cs
+} Î
+ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Common\Result.cs
 	namespace 	
 Domain
  

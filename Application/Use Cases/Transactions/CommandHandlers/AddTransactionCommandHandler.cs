@@ -1,11 +1,11 @@
-using MediatR;
-using Domain.Repositories; 
-using RealEstateManagement.Application.Transactions.Commands; 
+using Application.Use_Cases.Transactions.Commands;
 using Domain.Entities;
+using Domain.Repositories;
+using MediatR;
 
-namespace RealEstateManagement.Application.Transactions.CommandHandlers
+namespace Application.Use_Cases.Transactions.CommandHandlers
 {
-    public class AddTransactionCommandHandler : IRequestHandler<AddTransactionCommand, Transaction>
+    public class AddTransactionCommandHandler : IRequestHandler<AddTransactionCommand, Guid>
     {
         private readonly ITransactionRepository _transactionRepository;
 
@@ -14,9 +14,21 @@ namespace RealEstateManagement.Application.Transactions.CommandHandlers
             _transactionRepository = transactionRepository;
         }
 
-        public async Task<Transaction> Handle(AddTransactionCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(AddTransactionCommand request, CancellationToken cancellationToken)
         {
-            return await _transactionRepository.AddTransactionAsync(request.Transaction);
+            var transaction = new Transaction
+            {
+                TransactionId = Guid.NewGuid(),
+                PropertyId = request.PropertyId,
+                BuyerId = request.BuyerId,
+                SellerId = request.SellerId,
+                SalePrice = request.SalePrice,
+                Status = request.Status
+            };
+
+            await _transactionRepository.AddTransactionAsync(transaction);
+
+            return transaction.TransactionId;
         }
     }
 }

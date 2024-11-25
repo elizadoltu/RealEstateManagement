@@ -1,1 +1,1 @@
-D:\Facultate\dotnet\RealEstateManagement\RealEstateManagement\.sonarqube\out\0
+C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\.sonarqube\out\0

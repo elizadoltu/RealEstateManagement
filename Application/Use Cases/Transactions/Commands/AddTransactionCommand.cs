@@ -1,15 +1,13 @@
 using MediatR;
-using Domain.Entities;
 
-namespace RealEstateManagement.Application.Transactions.Commands
+namespace Application.Use_Cases.Transactions.Commands
 {
-    public class AddTransactionCommand : IRequest<Transaction>
+    public class AddTransactionCommand : IRequest<Guid>
     {
-        public Transaction Transaction { get; set; }
-
-        public AddTransactionCommand(Transaction transaction)
-        {
-            Transaction = transaction;
-        }
+        public Guid PropertyId { get; set; }
+        public Guid BuyerId { get; set; }
+        public Guid SellerId { get; set; }
+        public double SalePrice { get; set; }
+        public string Status { get; set; }
     }
 }

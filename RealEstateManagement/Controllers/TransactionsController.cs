@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Components.Forms;
 using Application.Use_Cases.Transactions.Queries;
 using Domain.Common;
 using Application.Utils;
+using Application.Use_Cases.Transactions.Commands;
 
 namespace RealEstateManagement.Controllers
 {
@@ -23,12 +24,12 @@ namespace RealEstateManagement.Controllers
             _mediator = mediator;
             _transactionRepository = transactionRepository;
         }
-
         [HttpPost]
-        public async Task<ActionResult<Transaction>> AddTransaction(Transaction transaction)
+        public async Task<ActionResult<Guid>> AddTransaction([FromBody] AddTransactionCommand command)
         {
-            var createdTransaction = await _transactionRepository.AddTransactionAsync(transaction);
-            return CreatedAtAction(nameof(AddTransaction), new { id = createdTransaction.TransactionId }, createdTransaction);
+            var transactionId = await _mediator.Send(command);
+
+            return CreatedAtAction(nameof(AddTransaction), new { id = transactionId }, transactionId);
         }
 
         [HttpPut("{id}")]
