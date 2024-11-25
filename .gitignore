@@ -399,4 +399,4 @@ FodyWeavers.xsd
 
 # Ignore Migrations folder
 Infrastructure/Migrations/
-.sonarqube/
+RealEstateManagement/.sonarqube/
