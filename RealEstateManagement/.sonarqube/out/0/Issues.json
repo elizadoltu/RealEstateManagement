@@ -6,7 +6,11 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
+<<<<<<< Updated upstream
         "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
+=======
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+>>>>>>> Stashed changes
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
@@ -18,12 +22,16 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/Domain/Entities/User.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/Domain/Entities/User.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 11,
                   "startColumn": 9,
                   "endLine": 11,
-                  "endColumn": 63
+                  "endColumn": 70
                 }
               }
             }
@@ -39,7 +47,11 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/Domain/Repositories/IPropertyListingRepository.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/Domain/Repositories/IPropertyListingRepository.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 10,
                   "startColumn": 9,

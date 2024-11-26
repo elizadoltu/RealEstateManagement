@@ -1,9 +1,15 @@
+<<<<<<< Updated upstream
 ø
 bC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Program.csF
+=======
+á
+KC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Program.csF
+>>>>>>> Stashed changes
    # *
 
    
  J
+<<<<<<< Updated upstream
         	°
 vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
 
@@ -11,6 +17,15 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
 # + 
 ) 1 $˜
 }C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+=======
+        	™
+_C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+
+		  
+# + 
+) 1 $
+fC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+>>>>>>> Stashed changes
 
  'H
 # , PP (^^ (ll (zz (
@@ -58,8 +73,13 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
 
 ˆˆ 
 ‰‰ 
+<<<<<<< Updated upstream
 ‹‹  ¸
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+=======
+‹‹   
+jC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+>>>>>>> Stashed changes
 
  +F
 # +  '** '77 '>> 'EE '
@@ -83,8 +103,13 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
 
 CC) >
 CCD FEE] _
+<<<<<<< Updated upstream
 EE FF LL" (
 €C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+=======
+EE FF LL" (õ
+iC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+>>>>>>> Stashed changes
 
  *P
 # +  '   '&& ',, '77 'BB '

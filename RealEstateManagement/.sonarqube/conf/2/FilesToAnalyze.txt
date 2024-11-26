@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DependencyInjection.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DTOs\ClientInquiryDto.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DTOs\PropertyListingDto.cs
@@ -46,3 +47,14 @@ C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\U
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\utils\MappingProfile.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\utils\PagedResult.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\ValidationBehavior.cs
+=======
+﻿C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\DependencyInjection.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.Designer.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\PropertyListingRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\TransactionRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\UserRepository.cs
+>>>>>>> Stashed changes

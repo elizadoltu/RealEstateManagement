@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ˜
 dC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\ValidationBehavior.cs 8r
 x‚
@@ -97,3 +98,23 @@ iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\
 Œ
 eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DependencyInjection.cs 8r	
 ‚
+=======
+•
+YC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\UserRepository.cs 8r&	
+ !#$%&'(‚ %ö
+`C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\TransactionRepository.cs# 	8re	
+ !"#$%&'(),-./013456789:;<>?@ABCDEGHIJKLMNOPQRSUVWXYZ[\]^_`abcdfghiklmnopx‚ "#'./05689:;<>?CIJLMQYZ\^bhmá
+dC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\PropertyListingRepository.cs 8
+jVWrQ	
+ !"#$%&'()*+,./012345689:;<=>?@ABCEGHIJKLMNOPQRSTUXYZ[\x‚$%&*23568<ABKLNOPRXê
+bC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.cs 8rZ	
+ !"#$%&'()*+,-./0123456789;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\x‚ '()-.5689;?DELMOPQSWXù
+^C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.cs( 
+8
+j&'()5678rP	
+ !"#$*+-./01239;<=>?@ABCDEGHIJLMNOQRSTVXYZ[\]^_`bcde‚2 !"#$-.0123;<>?@ABCDEGIJLNOQSTXY[\]^_`ò
+eC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.cs 8j	‘r¨
+ !"#$%&'()*+,-./012345679:;<=>?@ABCDEFGHIJKLMNOPQRSUVWXYZ[\]^_`abcdefghijklmnopqrstuwxyz|}~‚ƒ„†‡ˆ‰‹ŒŽ’“”•—˜š›žŸ ¡‚O "$%&'()*+,-/1249;=>?@ABCDEFGHJLMORUWYZ[\]^`bcehiknoqtw|†‹”—š
+QC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\DependencyInjection.cs 8r	
+‚	
+>>>>>>> Stashed changes

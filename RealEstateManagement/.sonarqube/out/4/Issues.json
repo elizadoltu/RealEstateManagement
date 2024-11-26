@@ -6,7 +6,11 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
+<<<<<<< Updated upstream
         "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
+=======
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+>>>>>>> Stashed changes
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
@@ -18,6 +22,7 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
                 "region": {
                   "startLine": 48,
@@ -61,6 +66,9 @@
             {
               "resultFile": {
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 55,
                   "startColumn": 64,
@@ -81,7 +89,11 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 55,
                   "startColumn": 13,
@@ -96,13 +108,86 @@
           }
         },
         {
+<<<<<<< Updated upstream
+=======
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 64,
+                  "endLine": 48,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8620",
+          "level": "warning",
+          "message": "Argument of type 'Task<PropertyListing>' cannot be used for parameter 'value' of type 'Task<PropertyListing?>' in 'ConfiguredCall SubstituteExtensions.Returns<PropertyListing?>(Task<PropertyListing?> value, PropertyListing? returnThis, params PropertyListing?[] returnThese)' due to differences in the nullability of reference types.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 13,
+                  "endLine": 48,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1829",
+          "level": "note",
+          "message": "Use the \"Count\" property instead of Enumerable.Count()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 13,
+                  "endLine": 38,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "PropertyNameKey": "Count"
+            }
+          }
+        },
+        {
+>>>>>>> Stashed changes
           "ruleId": "CA1822",
           "level": "note",
           "message": "Member 'GenerateUpdatePropertyListingCommand' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 74,
                   "startColumn": 46,
@@ -119,6 +204,7 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+<<<<<<< Updated upstream
           "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
           "locations": [
             {
@@ -129,6 +215,18 @@
                   "startColumn": 34,
                   "endLine": 102,
                   "endColumn": 58
+=======
+          "message": "Member 'GeneratePropertyListing' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 33,
+                  "endLine": 78,
+                  "endColumn": 56
+>>>>>>> Stashed changes
                 }
               }
             }
@@ -140,16 +238,24 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+<<<<<<< Updated upstream
           "message": "Member 'GenerateClientInquiries' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+=======
+          "message": "Member 'GenerateUpdatePropertyListingCommand' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/UpdatePropertyListingCommandHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
-                  "startLine": 71,
-                  "startColumn": 37,
-                  "endLine": 71,
-                  "endColumn": 60
+                  "startLine": 74,
+                  "startColumn": 46,
+                  "endLine": 74,
+                  "endColumn": 82
                 }
               }
             }
@@ -186,6 +292,7 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/CreatePropertyListingCommandHandlerTests.cs",
                 "region": {
                   "startLine": 78,
@@ -208,6 +315,9 @@
             {
               "resultFile": {
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 59,
                   "startColumn": 33,
@@ -228,7 +338,11 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetListingByIdQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 78,
                   "startColumn": 36,
@@ -249,7 +363,11 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 38,
                   "startColumn": 13,
@@ -269,6 +387,7 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+<<<<<<< Updated upstream
           "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
           "locations": [
             {
@@ -290,11 +409,17 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+=======
+>>>>>>> Stashed changes
           "message": "Member 'GenerateClientInquiry' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 69,
                   "startColumn": 31,
@@ -311,6 +436,7 @@
         {
           "ruleId": "CA1829",
           "level": "note",
+<<<<<<< Updated upstream
           "message": "Use the \"Count\" property instead of Enumerable.Count()",
           "locations": [
             {
@@ -321,14 +447,68 @@
                   "startColumn": 13,
                   "endLine": 86,
                   "endColumn": 27
+=======
+          "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetInquiryByIdQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 34,
+                  "endLine": 85,
+                  "endColumn": 58
+>>>>>>> Stashed changes
                 }
               }
             }
           ],
           "properties": {
+<<<<<<< Updated upstream
             "warningLevel": 1,
             "customProperties": {
               "PropertyNameKey": "Count"
+=======
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GenerateClientInquiryDto' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 34,
+                  "endLine": 102,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GenerateClientInquiries' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllInquiriesQueryHandlerTests.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 37,
+                  "endLine": 71,
+                  "endColumn": 60
+                }
+              }
+>>>>>>> Stashed changes
             }
           }
         },
@@ -339,7 +519,11 @@
           "locations": [
             {
               "resultFile": {
+<<<<<<< Updated upstream
                 "uri": "file:///C:/Users/marin/OneDrive/Desktop/Projects/.NET/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+=======
+                "uri": "file:///C:/Users/cezar/Desktop/RealEstateManagement/RealEstateManagement.Application.UnitTests/GetAllPropertyListingsQueryHandlerTests.cs",
+>>>>>>> Stashed changes
                 "region": {
                   "startLine": 126,
                   "startColumn": 39,

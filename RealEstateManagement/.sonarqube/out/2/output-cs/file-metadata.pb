@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 †
 {C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\obj\Debug\net8.0\Application.AssemblyInfo.csutf-8š
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8ˆ
@@ -50,3 +51,18 @@ eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\
 gC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DTOs\ClientInquiryDto.csutf-8r
 iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DTOs\PropertyListingDto.csutf-8n
 eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\DependencyInjection.csutf-8
+=======
+u
+jC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.csutf-8…
+zC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8w
+lC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\obj\Debug\net8.0\Infrastructure.GlobalUsings.g.csutf-8b
+YC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\UserRepository.csutf-8i
+`C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\TransactionRepository.csutf-8m
+dC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\PropertyListingRepository.csutf-8k
+bC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.csutf-8g
+^C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.csutf-8u
+jC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\ApplicationDbContextModelSnapshot.csutf-8y
+nC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.Designer.csutf-8n
+eC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.csutf-8Z
+QC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\DependencyInjection.csutf-8
+>>>>>>> Stashed changes

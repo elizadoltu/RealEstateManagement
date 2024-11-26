@@ -19,7 +19,7 @@ namespace Application.Use_Cases.Commands
             RuleFor(x => x.UserID).NotEmpty();
         }
 
-        private bool BeAValidGuid(Guid guid)
+        private static bool BeAValidGuid(Guid guid)
         {
             return Guid.TryParse(guid.ToString(), out _);
         }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Common\Result.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\PropertyListing.cs
@@ -7,3 +8,14 @@ C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Reposi
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+=======
+﻿C:\Users\cezar\Desktop\RealEstateManagement\Domain\Common\Result.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\PropertyListing.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\Transaction.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\User.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+>>>>>>> Stashed changes

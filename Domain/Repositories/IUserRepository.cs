@@ -1,14 +1,16 @@
-﻿using Domain.Entities;
+﻿using Domain.Common;
+using Domain.Entities;
 
 namespace Domain.Repositories
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<User>> GetAllUsersAsync();
-        Task<User> GetUserByIdAsync(Guid id);
-        Task<IEnumerable<PropertyListing>> GetListingsByUserId(Guid userId);
-        Task<User> AddUserAsync(User user);
-        Task UpdateUserAsync(User user);
-        Task DeleteUserAsync(Guid id);
+        Task<Result<IEnumerable<User>>> GetAllUsersAsync();
+        Task<Result<User>> GetUserByIdAsync(Guid id);
+        Task<Result<IEnumerable<PropertyListing>>> GetListingsByUserId(Guid userId);
+        Task<Result<IEnumerable<ClientInquiry>>> GetClientInquiriesByUserId(Guid userId);
+        Task<Result<Guid>> AddUserAsync(User user);
+        Task<Result<Guid>> UpdateUserAsync(User user);
+        Task<Result<Guid>> DeleteUserAsync(Guid id);
     }
 }

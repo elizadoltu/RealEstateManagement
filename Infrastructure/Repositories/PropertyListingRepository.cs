@@ -24,7 +24,7 @@ namespace Infrastructure.Repositories
             return await context.PropertyListings.FindAsync(id);
         }
 
-        public Task<IEnumerable<PropertyListing>> GetListingsByUserId(Guid userId)
+        public static Task<IEnumerable<PropertyListing>> GetListingsByUserId(Guid userId)
         {
             throw new NotImplementedException();
         }

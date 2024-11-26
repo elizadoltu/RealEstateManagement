@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 û
 iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+=======
+ä
+RC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+>>>>>>> Stashed changes
 
  $
 
@@ -27,8 +32,34 @@ iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  
 
+<<<<<<< Updated upstream
 " $²
 pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+=======
+" $×
+]C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+
+ /
+
++ >
+
+		 1
+
+		7 9
+
+ *
+
+; B
+
+ -
+
+> E
+
+ -
+
+3 5›
+YC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+>>>>>>> Stashed changes
 
  +
 
@@ -64,6 +95,7 @@ pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  #
 
+<<<<<<< Updated upstream
 ) +î
 tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
 
@@ -87,6 +119,10 @@ tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
 3 5„
 rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+=======
+) +í
+[C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+>>>>>>> Stashed changes
 
  -
 
@@ -114,8 +150,36 @@ rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  -
 
+<<<<<<< Updated upstream
 3 5·
 aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\Transaction.cs
+=======
+3 5Æ
+LC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+
+ 
+
+ 
+
+ 
+
+ "
+
+ 
+
+		 
+
+
+
+ &
+
+ &
+
+ &
+
+ ' 
+JC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\Transaction.cs
+>>>>>>> Stashed changes
 
  
 
@@ -131,6 +195,7 @@ aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 
 
+<<<<<<< Updated upstream
  °
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\User.cs
 
@@ -150,6 +215,10 @@ ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 $ 3ƒ
 eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\PropertyListing.cs
+=======
+ ì
+NC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\PropertyListing.cs
+>>>>>>> Stashed changes
 
   
 
@@ -177,6 +246,7 @@ eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
   
 
+<<<<<<< Updated upstream
  Ý
 cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\ClientInquiry.cs
 
@@ -202,6 +272,27 @@ cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
  'Œ
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Common\Result.cs
+=======
+ ™
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\User.cs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ "
+
+		& 6
+
+
+
+$ 3õ
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Common\Result.cs
+>>>>>>> Stashed changes
    F
   		  ( )  
   

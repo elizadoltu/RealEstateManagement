@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 Œ
 bC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Program.cs
+=======
+õ
+KC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Program.cs
+>>>>>>> Stashed changes
 var 
 builder 
 = 
@@ -130,8 +135,13 @@ UseSwagger 
  
 ( 
 ) 
+<<<<<<< Updated upstream
 ; „
 vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+=======
+; í
+_C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+>>>>>>> Stashed changes
 	namespace 	 
 RealEstateManagement
  
@@ -178,8 +188,13 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
 ;$ %
 } 	
 } 
+<<<<<<< Updated upstream
 } ³[
 }C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+=======
+} œ[
+fC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+>>>>>>> Stashed changes
 	namespace 	 
 RealEstateManagement
  
@@ -910,8 +925,13 @@ PropertyIdllT ^
 ““ 	
 }
 ”” 
+<<<<<<< Updated upstream
 }•• …/
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+=======
+}•• í.
+jC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+>>>>>>> Stashed changes
 	namespace		 	 
 RealEstateManagement		
  
@@ -1249,8 +1269,13 @@ BadRequestLL !
 }MM 
 }NN 	
 }PP 
+<<<<<<< Updated upstream
 }QQ —3
 €C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+=======
+}QQ ÿ2
+iC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+>>>>>>> Stashed changes
 	namespace 	 
 RealEstateManagement
  

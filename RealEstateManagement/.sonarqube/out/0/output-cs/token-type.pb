@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 ›
 iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+=======
+„
+RC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+>>>>>>> Stashed changes
  
  	 
   $     $ (		 		 		 (		? C
@@ -8,11 +13,26 @@ iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  
 
+<<<<<<< Updated upstream
   $  !  !º
 pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
  
  
  	 
+=======
+  $  !  !·
+]C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+ 
+ 
+ 	 
+  /   (		 		 		2 6
+
+ N   + :   . =   . 2£
+YC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+ 
+ 
+ 	 
+>>>>>>> Stashed changes
   +     +		 		 		 		: >
 
  
@@ -21,6 +41,7 @@ pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  
 
+<<<<<<< Updated upstream
 B F   $@ D   $A E  . 9 $ / $ (Î
 tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
  
@@ -30,6 +51,10 @@ tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  N   + :   . =   . 2ö
 rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+=======
+B F   $@ D   $A E  . 9 $ / $ (ß
+[C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+>>>>>>> Stashed changes
  
  
  	 
@@ -41,6 +66,7 @@ rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 
  &
 
+<<<<<<< Updated upstream
 @ D   + 8   . ;   . 2é
 aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\Transaction.cs
  	 
@@ -54,6 +80,10 @@ aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 % (¡
 cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+=======
+@ D   + 8   . ;   . 2Š
+LC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+>>>>>>> Stashed changes
  	 
       #% (   "$ '   % (* -  ! $& )		 		 		! $		& )
 
@@ -63,8 +93,35 @@ cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 ) ,
 
+<<<<<<< Updated upstream
 . 1  ) ,. 1  ) ,. 1  * -/ 2Œ
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\User.cs
+=======
+. 1  ) ,. 1  ) ,. 1  * -/ 2Ò
+JC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\Transaction.cs
+ 	 
+    $ ') ,  ! $& )   !# &   "$ '		 		 		" %		' *
+
+ 
+
+ 
+
+  #
+
+% (´
+NC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\PropertyListing.cs
+ 	 
+     ! $& )  ! $& )   !# &   !# &		 		 		& )		+ .
+
+ 
+
+ 
+
+) ,
+
+. 1  * -/ 2   % (* -    #% (  & )+ .  # &( +    " %õ
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\User.cs
+>>>>>>> Stashed changes
  	 
       " %   !# &   "$ '  % (* -		 		 		 #		9 <		> A
 
@@ -76,6 +133,7 @@ ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 6 9
 
+<<<<<<< Updated upstream
 ; > >Ë
 eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\PropertyListing.cs
  	 
@@ -89,5 +147,9 @@ eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 . 1  * -/ 2   % (* -    #% (  & )+ .  # &( +    " %î
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Common\Result.cs
+=======
+; > E×
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Common\Result.cs
+>>>>>>> Stashed changes
  	 
           #  % (		 		 		 		! %		1 7    ( )3 6= AC G    ( .    ! (+ 0

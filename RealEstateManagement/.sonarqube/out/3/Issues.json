@@ -6,11 +6,16 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.11.0.0",
+<<<<<<< Updated upstream
         "fileVersion": "4.11.0-3.24468.6 (b4e5d1dd)",
+=======
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+>>>>>>> Stashed changes
         "semanticVersion": "4.11.0",
         "language": "en-US"
       },
       "results": [
+<<<<<<< Updated upstream
         {
           "ruleId": "CS8618",
           "level": "warning",
@@ -1073,6 +1078,9 @@
           }
         }
       }
+=======
+      ]
+>>>>>>> Stashed changes
     }
   ]
 }

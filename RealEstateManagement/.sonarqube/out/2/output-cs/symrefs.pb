@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 â
 dC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\ValidationBehavior.cs
 
@@ -34,6 +35,180 @@ fC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\
 C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\Use Cases\Transactions\Queries\GetTransactionsBySellerIdQuery.cs
 
  /
+=======
+—
+YC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\UserRepository.cs
+
+ 
+		. 5 
+
+
+3 : "
+
+' 7
+
+ *
+
+0 2
+
+ &
+
+, 0
+
+ #
+
+) -
+
+ #
+
+) +
+
+##2 E
+
+##K Q«
+bC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\ClientInquiryRepository.cs
+
+		 (‚
+. 5     '  '' (( 55, 388 99 !LL$ +OO PP !
+< C "
+
+6 J
+
+) <
+B DB DI K
+   
+
+6 L
+R X  F L
+  ' .  2 9
+
+##( 7
+##F M''7 >)), 3
+--  .., 8
+
+11( :(
+11I P55N U88K R;;0 7
+55 #66 #88" 1
+DD  EE, 8
+
+HH( :
+HH@ BLLF HQQ0 2
+LL MM OO3 :
+WW  XX, 8¿
+
+^C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Persistance\ApplicationDbContext.cs
+ %5 I
+K R[ b
+
+& 6
+
+$ 3
+
+" .
+
+  
+
+  /<
+= I  -- ;; XX –
+             !! "" ## $$ 
+& '+ ,
+( )- .
+( )- .
+( )- .
+( )- .
+( )- .
+( )- .
+( )- .
+  ( )  - .
+!!( )!!- .
+""( )""- .
+##( )##- .
+$$( )$$- .2
+.. 00 11 22 33 
+11" #11' (
+22$ %22) *
+33$ %33) *x
+<< >> ?? @@ AA BB CC DD EE GG LL QQ 
+??" #??' (
+@@$ %@@) *
+AA$ %AA) *
+BB$ %BB) *
+CC$ %CC) *
+DD$ %DD) *
+EE$ %EE) *
+II' (II, -
+NN' (NN, -
+SS' (SS, -F
+YY [[ \\ ]] ^^ __ `` 
+\\" #\\' (
+]]$ %]]) *
+^^$ %^^) *
+__$ %__) *
+``$ %``) *ç
+`C:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\TransactionRepository.cs
+
+		 &–
+. 5 ) 0""( /.. // 55, 3>> ?? II$ +LL MM YY( /hh  mm  
+: A "
+
+< S
+  @ L
+
+/ F
+L N""G I
+"" ##3 >
+
+,,' :
+,,G R..0 ;00 
+
+33 0P
+33= H55K V881 <99. 9::/ :;;0 ;<<- 8CC; FP
+55 #66 #88 #99 #:: #;; #<< #>>, ?
+
+GG 0
+GG6 8IIC EQQ; =
+II JJ LL, 7
+
+UU/ N
+UUT VYYf h
+YY ZZ \\7 B
+YYQ RYYV W
+
+ff4 L
+ffR XhhF L
+hh4 5hh9 :
+
+kk4 M
+kkS YmmG M
+mm4 5mm9 :¬
+dC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Repositories\PropertyListingRepository.cs
+
+		 *x
+. 5     $$ %% 22, 355 66 !KK, 3NN OO !
+> E "
+
+8 K
+
++ >
+D F< >
+
+9 L
+
+R X
+
+  ( 7
+  H O$$8 ?&&, 3
+
+..( :(
+..K R22O V55K R880 7
+22 #33 #55" 1
+AA  BB, 8
+
+GG( :
+GG@ BKKO QPP0 2
+KK #LL #NN4 C‚
+eC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\Migrations\20241111082243_InitialCreate.cs
+>>>>>>> Stashed changes
 
 
 
@@ -44,7 +219,16 @@ fC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\
  Á
 ŽC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Application\Use Cases\Transactions\Queries\GetTransactionsByBuyerIdQuery.cs
 
+<<<<<<< Updated upstream
  .
+=======
+’’6 F
+”” 
+—— 
+šš 
+ õ
+QC:\Users\cezar\Desktop\RealEstateManagement\Infrastructure\DependencyInjection.cs
+>>>>>>> Stashed changes
 
 
 

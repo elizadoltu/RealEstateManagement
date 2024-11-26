@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 Roslyn version: 4.11.0.0Language version: CSharp12!Concurrent execution: enabled™”File 'C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs' was recognized as generated±¬File 'C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs' was recognized as generated›–File 'C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\obj\Debug\net8.0\Domain.GlobalUsings.g.cs' was recognized as generated
+=======
+Roslyn version: 4.11.0.0Language version: CSharp12!Concurrent execution: enabled}File 'C:\Users\cezar\Desktop\RealEstateManagement\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs' was recognized as generatedš•File 'C:\Users\cezar\Desktop\RealEstateManagement\Domain\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs' was recognized as generatedƒFile 'C:\Users\cezar\Desktop\RealEstateManagement\Domain\obj\Debug\net8.0\Domain.GlobalUsings.g.cs' was recognized as generated
+>>>>>>> Stashed changes

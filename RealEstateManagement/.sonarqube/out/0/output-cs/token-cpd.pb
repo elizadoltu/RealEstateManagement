@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 Ó
 
 iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+=======
+¼
+
+RC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IUserRepository.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -91,8 +97,87 @@ iC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 )$ %
 ;% &
 } 
+<<<<<<< Updated upstream
 } ‹
 pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+=======
+} ‘
+]C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
+	namespace 	
+Domain
+ 
+. 
+Repositories 
+{ 
+public 
+
+	interface &
+IPropertyListingRepository /
+{ 
+Task 
+< 
+IEnumerable 
+< 
+PropertyListing (
+>( )
+>) *
+GetAllListingsAsync+ >
+(> ?
+)? @
+;@ A
+Task		 
+<		 
+PropertyListing		 
+>		 
+GetListingByIdAsync		 1
+(		1 2
+Guid		2 6
+id		7 9
+)		9 :
+;		: ;
+Task 
+< 
+Result 
+< 
+Guid 
+> 
+> 
+AddListingAsync *
+(* +
+PropertyListing+ :
+listing; B
+)B C
+;C D
+Task 
+< 
+Result 
+< 
+Guid 
+> 
+> 
+UpdateListingAsync -
+(- .
+PropertyListing. =
+listing> E
+)E F
+;F G
+Task 
+< 
+Result 
+< 
+Guid 
+> 
+> 
+DeleteListingAsync -
+(- .
+Guid. 2
+id3 5
+)5 6
+;6 7
+} 
+} ô
+YC:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\ITransactionRepository.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -221,6 +306,7 @@ pC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 )+ ,
 ;, -
 } 
+<<<<<<< Updated upstream
 } ¨
 tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IPropertyListingRepository.cs
 	namespace 	
@@ -297,6 +383,10 @@ tC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 } 
 } ˜
 rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+=======
+} 
+[C:\Users\cezar\Desktop\RealEstateManagement\Domain\Repositories\IClientInquiryRepository.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -408,8 +498,14 @@ rC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Repos
 )5 6
 ;6 7
 } 
+<<<<<<< Updated upstream
 } …
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\User.cs
+=======
+} î
+
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\User.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -513,8 +609,13 @@ ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 
 @ A
 } 
+<<<<<<< Updated upstream
 } Ý	
 aC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\Transaction.cs
+=======
+} Æ	
+JC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\Transaction.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -603,8 +704,13 @@ PropertyId 
 
 * +
 } 
+<<<<<<< Updated upstream
 } Ý
 eC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\PropertyListing.cs
+=======
+} Æ
+NC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\PropertyListing.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -749,8 +855,13 @@ PropertyId 
 ;% &
 }' (
 } 
+<<<<<<< Updated upstream
 } ƒ
 cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+=======
+} ì
+LC:\Users\cezar\Desktop\RealEstateManagement\Domain\Entities\ClientInquiry.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  
@@ -866,8 +977,13 @@ cC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Entit
 ;2 3
 }4 5
 } 
+<<<<<<< Updated upstream
 } ë
 ZC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\Domain\Common\Result.cs
+=======
+} Ô
+CC:\Users\cezar\Desktop\RealEstateManagement\Domain\Common\Result.cs
+>>>>>>> Stashed changes
 	namespace 	
 Domain
  

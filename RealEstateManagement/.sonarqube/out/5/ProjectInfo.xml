@@ -4,6 +4,7 @@
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
   <ProjectGuid>35be79dd-1083-410d-9254-947adebeb78b</ProjectGuid>
+<<<<<<< Updated upstream
   <FullPath>C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\RealEstateManagement.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
@@ -12,6 +13,16 @@
   <AnalysisSettings>
     <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\.sonarqube\out\5\Issues.json</Property>
     <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\.sonarqube\out\5</Property>
+=======
+  <FullPath>C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\RealEstateManagement.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\.sonarqube\conf\5\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\.sonarqube\out\5\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\.sonarqube\out\5</Property>
+>>>>>>> Stashed changes
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

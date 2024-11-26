@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 ﬁ
 bC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Program.cs
+=======
+«
+KC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Program.cs
+>>>>>>> Stashed changes
  
  
   
@@ -8,15 +13,25 @@ bC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
  
  '
  
+<<<<<<< Updated upstream
  Ï
 vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+=======
+ ’
+_C:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\UsersController.cs
+>>>>>>> Stashed changes
  
  
  
  	 
   		 
+<<<<<<< Updated upstream
 		 		  		# 1   "   ( ˜
 }C:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+=======
+		 		  		# 1   "   ( ‡
+fC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\TransactionsController.cs
+>>>>>>> Stashed changes
  
  
  
@@ -56,8 +71,13 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
 ââ 
 ãã 
 çç 
+<<<<<<< Updated upstream
 èè ò
 ÅC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+=======
+èè Ä
+jC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\PropertyListingsController.cs
+>>>>>>> Stashed changes
  
  
  
@@ -67,8 +87,13 @@ vC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateMa
  
 		 	 
    
+<<<<<<< Updated upstream
   +. <   "  )* 3 	     &' -. 2L h        ##	 ## $$ $$ $$ $$ &$$' -$$. 2$$L P$$U q&& (( ** ** ++ -- .. 00 44	 44 55 55 55 55 &55' 955P T77 77 77- 0771 D88 ;;	 << << << << &<<' +<<, >>> >> >>- 0>>1 K?? BB	 BB CC CC CC CC 'CC? CEE EE EE- 0EE1 MFF HH JJ LL ·
 ÄC:\Users\marin\OneDrive\Desktop\Projects\.NET\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+=======
+  +. <   "  )* 3 	     &' -. 2L h        ##	 ## $$ $$ $$ $$ &$$' -$$. 2$$L P$$U q&& (( ** ** ++ -- .. 00 44	 44 55 55 55 55 &55' 955P T77 77 77- 0771 D88 ;;	 << << << << &<<' +<<, >>> >> >>- 0>>1 K?? BB	 BB CC CC CC CC 'CC? CEE EE EE- 0EE1 MFF HH JJ LL …
+iC:\Users\cezar\Desktop\RealEstateManagement\RealEstateManagement\Controllers\ClientInquiriesController.cs
+>>>>>>> Stashed changes
  
  
  

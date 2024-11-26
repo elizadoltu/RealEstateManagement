@@ -3,6 +3,8 @@ using AutoMapper;
 using Application.Use_Cases.Commands;
 using Domain.Entities;
 using Application.Use_Cases.ClientInquiries.Commands;
+using Application.Use_Cases.Users.CommandHandlers;
+using Application.Use_Cases.Users.Commands;
 
 namespace Application.utils
 {
@@ -19,6 +21,11 @@ namespace Application.utils
             CreateMap<UpdatePropertyListingCommand, PropertyListing>().ReverseMap();
             CreateMap<CreateClientInquiryCommand, ClientInquiry>().ReverseMap();
             CreateMap<UpdateClientInquiryCommand, ClientInquiry>().ReverseMap();
+            CreateMap<CreateUserCommand, User>().ReverseMap();
+            CreateMap<UpdateUserCommand, User>().ReverseMap();
+
+
+
         }
     }
 }
