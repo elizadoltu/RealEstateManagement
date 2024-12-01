@@ -13,14 +13,17 @@ COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
 # Restore NuGet packages
 RUN dotnet restore "RealEstateManagement/RealEstateManagement.csproj"
 
-# Copy the entire repository
+# Copy the entire repository into the container
 COPY . .
 
+# Set the working directory to the RealEstateManagement project folder
+WORKDIR "/src/RealEstateManagement"
+
 # Build the application
-RUN dotnet build "RealEstateManagement/RealEstateManagement.csproj" -c Release -o /app/build
+RUN dotnet build "RealEstateManagement.csproj" -c Release -o /app/build
 
 # Publish the application
-RUN dotnet publish "RealEstateManagement/RealEstateManagement.csproj" -c Release -o /app/publish
+RUN dotnet publish "RealEstateManagement.csproj" -c Release -o /app/publish
 
 # Set the base image for the runtime environment
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
