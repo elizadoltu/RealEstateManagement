@@ -1,6 +1,6 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "./RealEstateManagement/Dockerfile"
+dockerfilePath = "./Dockerfile"
 
 [deploy]
 startCommand = "dotnet RealEstateManagement.dll"
