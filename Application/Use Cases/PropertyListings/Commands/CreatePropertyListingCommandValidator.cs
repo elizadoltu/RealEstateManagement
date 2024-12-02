@@ -7,6 +7,7 @@ namespace Application.Use_Cases.Commands
         public CreatePropertyListingCommandValidator()
         {
             RuleFor(x => x.Address).MaximumLength(200);
+            RuleFor(x => x.Title).MaximumLength(100);
             RuleFor(x => x.Price).GreaterThan(0);
             RuleFor(x => x.SquareFootage).GreaterThan(0);
             RuleFor(x => x.NumberOfBedrooms).GreaterThanOrEqualTo(0);

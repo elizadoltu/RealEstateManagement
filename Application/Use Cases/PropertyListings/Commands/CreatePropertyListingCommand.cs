@@ -6,6 +6,7 @@ namespace Application.Use_Cases.Commands
     public class CreatePropertyListingCommand : IRequest<Result<Guid>>
     {
         public string? Address { get; set; }
+        public string? Title { get; set; }
         public string? Type { get; set; }
         public double Price { get; set; }
         public double SquareFootage { get; set; }

@@ -24,6 +24,7 @@ namespace Infrastructure.Persistance
                         entity.HasKey(e => e.PropertyId);
                         entity.Property(e => e.PropertyId).HasColumnType("uuid").HasDefaultValueSql("uuid_generate_v4()").ValueGeneratedOnAdd();
                         entity.Property(e => e.Address).IsRequired().HasMaxLength(200);
+                        entity.Property(e => e.Title).IsRequired().HasMaxLength(100);
                         entity.Property(e => e.Type).IsRequired();
                         entity.Property(e => e.Price).IsRequired();
                         entity.Property(e => e.SquareFootage).IsRequired();
@@ -35,10 +36,6 @@ namespace Infrastructure.Persistance
                         entity.Property(e => e.ImageURLs).IsRequired();
                         entity.Property(e => e.UserID).IsRequired();
 
-                        /*entity.HasOne<User>()
-                            .WithMany()
-                            .HasForeignKey(e => e.UserID)
-                            .OnDelete(DeleteBehavior.Cascade);*/
                     }
                 );
             
@@ -50,10 +47,6 @@ namespace Infrastructure.Persistance
                     entity.Property(e => e.InquiryId).HasColumnType("uuid").HasDefaultValueSql("uuid_generate_v4()").ValueGeneratedOnAdd();
                     entity.Property(e => e.ClientId).IsRequired();
 
-                    //entity.HasOne<User>()
-                    //    .WithMany()
-                    //    .HasForeignKey(e => e.ClientId)
-                    //    .OnDelete(DeleteBehavior.Cascade);
                 });
             
             modelBuilder.Entity<Transaction>(

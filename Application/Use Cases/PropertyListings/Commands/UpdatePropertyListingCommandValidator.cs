@@ -7,6 +7,7 @@ namespace Application.Use_Cases.Commands
         public UpdatePropertyListingCommandValidator()
         {
             RuleFor(x => x.PropertyId).NotEmpty().Must(BeAValidGuid);
+            RuleFor(x => x.Title).MaximumLength(100);
             RuleFor(x => x.Address).MaximumLength(200);
             RuleFor(x => x.Price).GreaterThan(0);
             RuleFor(x => x.SquareFootage).GreaterThan(0);

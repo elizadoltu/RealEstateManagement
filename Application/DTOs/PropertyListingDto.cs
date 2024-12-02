@@ -3,6 +3,7 @@
     public class PropertyListingDto
     {
         public Guid PropertyId { get; set; }
+        public string? Title { get; set; }
         public string? Address { get; set; }
         public string? Type { get; set; }
         public double Price { get; set; }
