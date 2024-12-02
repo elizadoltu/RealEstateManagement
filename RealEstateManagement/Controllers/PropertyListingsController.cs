@@ -1,6 +1,8 @@
 ﻿using Application.DTOs;
 using Application.Use_Cases.Commands;
+using Application.Use_Cases.PropertyListings.Queries;
 using Application.Use_Cases.Queries;
+using Application.Utils;
 using Domain.Common;
 using Domain.Entities;
 using MediatR;
@@ -75,6 +77,24 @@ namespace RealEstateManagement.Controllers
             {
                 return BadRequest(result.ErrorMessage);
             }
+        }
+
+        [HttpGet("paginated")]
+        public async Task<ActionResult<PagedResult<PropertyListingDto>>> GetFilteredPropertyListings([FromQuery] int page, [FromQuery] int pageSize, [FromQuery] string? Type, [FromQuery] double price, [FromQuery] double nrOfBathrooms, [FromQuery] double nrOfBedrooms, [FromQuery] string? status, [FromQuery] double squareFootage)
+        {
+            var query = new GetFilteredPropertyListingsQuery
+            {
+                Page = page,
+                PageSize = pageSize,
+                Type = Type,
+                Price = price,
+                NumberOfBathrooms = nrOfBathrooms,
+                NumberOfBedrooms = nrOfBedrooms,
+                Status = status,
+                SquareFootage = squareFootage
+            };
+            var result = await mediator.Send(query);
+            return Ok(result);
         }
 
     }
