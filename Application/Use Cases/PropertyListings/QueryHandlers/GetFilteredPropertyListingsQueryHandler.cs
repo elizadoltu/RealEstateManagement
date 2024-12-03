@@ -28,7 +28,7 @@ namespace Application.Use_Cases.PropertyListings.QueryHandlers
             //apply filter
             if (!string.IsNullOrEmpty(request.Type))
             {
-                query = query.Where(x => x.Type == request.Type);
+                query = query.Where(x => x.Type.ToLower() == request.Type.ToLower());
             }
             if (request.Price > 0)
             {
