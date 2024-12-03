@@ -4,6 +4,12 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <ContainerRuntimeIdentifier>win-x64</ContainerRuntimeIdentifier>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:9.0-nanoserver-1809</ContainerBaseImage>
+    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+    <UserSecretsId>a881af1f-46d9-423c-9cd5-fb76590f1a2e</UserSecretsId>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +26,10 @@
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ContainerPort Include="8081" />
   </ItemGroup>
 
 </Project>
