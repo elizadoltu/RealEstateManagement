@@ -4,6 +4,9 @@ using Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 var MyAllowSpecificOrigins = "MyAllowSpecificOrigins";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.UseUrls($"http://*:{port}");
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -23,6 +26,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.WebHost.UseContentRoot(Directory.GetCurrentDirectory());
+
 
 var app = builder.Build();
 
@@ -39,7 +44,7 @@ app.UseRouting();
 
 app.UseCors("MyAllowSpecificOrigins");
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.MapControllers();
 
