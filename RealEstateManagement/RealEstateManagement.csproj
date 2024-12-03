@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <ContainerPort Include="8081" />
+	  <Content Include="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
