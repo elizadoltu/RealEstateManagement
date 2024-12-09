@@ -1,6 +1,11 @@
 using Application;
+using Identity;
 using Infrastructure;
+<<<<<<< HEAD
 using Infrastructure.Persistance;
+=======
+using Microsoft.OpenApi.Models;
+>>>>>>> upstream/main
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,11 +29,46 @@ builder.Services.AddCors(options =>
 // Add application and infrastructure layers
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+<<<<<<< HEAD
+=======
+builder.Services.AddIdentity(builder.Configuration);
+
+builder.Services.AddControllers();
+>>>>>>> upstream/main
 
 // Add controllers and Swagger for API documentation
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Your API", Version = "v1" });
+
+    // Add JWT Authentication
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 var app = builder.Build();
 
@@ -55,9 +95,22 @@ app.UseRouting(); // Enable routing
 app.UseCors(MyAllowSpecificOrigins); // Apply CORS policy
 app.MapControllers(); // Map controllers
 
+<<<<<<< HEAD
 // Dynamically set the hosting port for Railway
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5047";
 app.Urls.Add($"http://*:{port}");
+=======
+app.UseRouting();
+
+app.UseCors("MyAllowSpecificOrigins");
+
+app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
+>>>>>>> upstream/main
 
 app.Run();
 
