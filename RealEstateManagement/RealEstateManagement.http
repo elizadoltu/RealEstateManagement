@@ -1,4 +1,4 @@
-@RealEstateManagement_HostAddress = https://abundant-reflection-production.up.railway.app/
+@RealEstateManagement_HostAddress = http://localhost:5047
 
 GET {{RealEstateManagement_HostAddress}}/weatherforecast/
 Accept: application/json
