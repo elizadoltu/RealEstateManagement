@@ -1,50 +1,65 @@
 using Application;
 using Infrastructure;
+using Infrastructure.Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Define the CORS policy name
 var MyAllowSpecificOrigins = "MyAllowSpecificOrigins";
+
+// Configure services
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:4200", "https://real-estate-management-app-frontend.onrender.com");
-                          policy.AllowAnyHeader();
-                          policy.AllowAnyMethod();
-                      });
+    options.AddPolicy(name: MyAllowSpecificOrigins, policy =>
+    {
+        policy.WithOrigins(
+            "http://localhost:4200", // Local testing
+            "https://realio-five.vercel.app/" // Production frontend
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
 });
 
+// Add application and infrastructure layers
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddControllers();
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Add controllers and Swagger for API documentation
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Apply migrations on startup (if using Entity Framework)
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    //dbContext.Database.Migrate();
+}
+
+// Configure middleware for the app
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "RealEstateManagement API V1");
+        c.RoutePrefix = string.Empty; // Serve Swagger UI at the root
+    });
 }
 
-// app.UseStaticFiles();
+app.UseHttpsRedirection(); // Redirect HTTP to HTTPS
+app.UseRouting(); // Enable routing
+app.UseCors(MyAllowSpecificOrigins); // Apply CORS policy
+app.MapControllers(); // Map controllers
 
-app.UseRouting();
-
-app.UseCors("MyAllowSpecificOrigins");
-
-// app.UseHttpsRedirection();
-
-app.MapControllers();
+// Dynamically set the hosting port for Railway
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5047";
+app.Urls.Add($"http://*:{port}");
 
 app.Run();
 
-public partial class Program
-{
-}
+// Partial class for testing purposes
+public partial class Program { }
