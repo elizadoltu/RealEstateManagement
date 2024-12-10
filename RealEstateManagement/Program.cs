@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
             "http://localhost:4200", // Local testing
-            "https://realio-five.vercel.app/" // Production frontend
+            "https://realio-five.vercel.app" // Production frontend
         )
         .AllowAnyHeader()
         .AllowAnyMethod();
@@ -51,8 +51,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection(); // Redirect HTTP to HTTPS
-app.UseRouting(); // Enable routing
 app.UseCors(MyAllowSpecificOrigins); // Apply CORS policy
+
+app.UseRouting(); // Enable routing
 app.MapControllers(); // Map controllers
 
 // Dynamically set the hosting port for Railway
