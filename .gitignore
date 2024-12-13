@@ -398,5 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Ignore Migrations folder
-Infrastructure/Migrations/
+
 RealEstateManagement/.sonarqube/

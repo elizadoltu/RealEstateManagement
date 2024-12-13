@@ -6,6 +6,7 @@ using Application.Utils;
 using Domain.Common;
 using Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateManagement.Controllers
@@ -22,6 +23,7 @@ namespace RealEstateManagement.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Result<Guid>>> CreatePropertyListing(CreatePropertyListingCommand command)
         {
             var result = await mediator.Send(command);

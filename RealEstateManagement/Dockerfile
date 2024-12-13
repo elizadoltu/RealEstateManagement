@@ -1,19 +1,18 @@
 ﻿# Use the official Microsoft .NET SDK as the build image
 FROM mcr.microsoft.com/dotnet/sdk:9.0-windowsservercore-ltsc2022 AS build
 
-
 # Set the working directory to /src
 WORKDIR /src
 
 # Copy the .csproj files and restore any dependencies (via dotnet restore)
-COPY ["RealEstateManagement/RealEstateManagement.csproj", "RealEstateManagement/"]
+COPY ["RealEstateManagement.csproj", "RealEstateManagement/"]
 COPY ["Application/Application.csproj", "Application/"]
 COPY ["Domain/Domain.csproj", "Domain/"]
 COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
-COPY ["Identity/Identity.csproj", "Identity/"]
+COPY ["Infrastructure/Identity.csproj", "Infrastructure/"]
 
 # Restore NuGet packages
-RUN dotnet restore "RealEstateManagement/RealEstateManagement.csproj"
+RUN dotnet restore "RealEstateManagement.csproj"
 
 # Copy the entire repository into the container
 COPY . .
@@ -28,7 +27,7 @@ RUN dotnet build "RealEstateManagement.csproj" -c Release -o /app/build
 RUN dotnet publish "RealEstateManagement.csproj" -c Release -o /app/publish
 
 # Set the base image for the runtime environment
-FROM mcr.microsoft.com/dotnet/sdk:9.0-windowsservercore-ltsc2022 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 80
 
