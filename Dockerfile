@@ -1,5 +1,5 @@
 ﻿# Use the official Microsoft .NET SDK as the build image
-FROM mcr.microsoft.com/dotnet/sdk:9.0-windowsservercore-ltsc2022 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 
 
 # Set the working directory to /src
@@ -28,7 +28,7 @@ RUN dotnet build "RealEstateManagement.csproj" -c Release -o /app/build
 RUN dotnet publish "RealEstateManagement.csproj" -c Release -o /app/publish
 
 # Set the base image for the runtime environment
-FROM mcr.microsoft.com/dotnet/sdk:9.0-windowsservercore-ltsc2022 AS base
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS base
 WORKDIR /app
 EXPOSE 80
 
