@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -19,6 +20,7 @@ public class AuthController : ControllerBase
         return Ok(new { UserId = userId });
     }
 
+    [EnableCors("AuthPolicy")]
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginUserCommand command)
     {

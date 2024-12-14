@@ -15,6 +15,14 @@ builder.Services.AddCors(options =>
                           policy.AllowAnyHeader();
                           policy.AllowAnyMethod();
                       });
+
+    options.AddPolicy("AuthPolicy",
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin();
+                          policy.AllowAnyHeader();
+                          policy.AllowAnyMethod();
+                      });
 });
 
 builder.Services.AddApplication();
