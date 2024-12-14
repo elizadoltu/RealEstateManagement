@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
+[EnableCors("MyAllowSpecificOrigins")]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {

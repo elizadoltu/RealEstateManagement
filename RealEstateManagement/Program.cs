@@ -5,34 +5,32 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS policies
 var MyAllowSpecificOrigins = "MyAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:4200", "https://realio-five.vercel.app");
-                          policy.AllowAnyHeader();
-                          policy.AllowAnyMethod();
+                          policy.WithOrigins("http://localhost:4200", "https://realio-five.vercel.app")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
                       });
 
-    options.AddPolicy("AuthPolicy",
-                      policy =>
-                      {
-                          policy.AllowAnyOrigin();
-                          policy.AllowAnyHeader();
-                          policy.AllowAnyMethod();
-                      });
+    options.AddPolicy("AuthPolicy", policy =>
+    {
+        policy.AllowAnyOrigin()  // This should be limited to specific origins if possible.
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
 });
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddIdentity(builder.Configuration);
-
 builder.Services.AddControllers();
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -78,7 +76,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseCors("MyAllowSpecificOrigins");
+// Apply CORS middleware
+app.UseCors("MyAllowSpecificOrigins"); // This should be applied before authentication and authorization
 app.UseCors("AuthPolicy");
 
 app.UseHttpsRedirection();
@@ -89,9 +88,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5047";
-app.Urls.Add($"http://*:{port}");
-
-public partial class Program
-{
-}
