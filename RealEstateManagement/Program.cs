@@ -79,6 +79,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseCors("MyAllowSpecificOrigins");
+app.UseCors("AuthPolicy");
 
 app.UseHttpsRedirection();
 
