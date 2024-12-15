@@ -32,6 +32,9 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS base
 WORKDIR /app
 EXPOSE 80
 
+# Copy the data.csv file to the /app directory in the container
+COPY RealEstateManagement/data.csv /app/data.csv
+
 # Copy the published files from the build stage
 COPY --from=build /app/publish .
 
