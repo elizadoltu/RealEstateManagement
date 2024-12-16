@@ -4,12 +4,14 @@ using Application.Use_Cases.Users.Commands;
 using Application.Use_Cases.Users.Queries;
 using Domain.Common;
 using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyAllowSpecificOrigins")]
     public class UsersController : ControllerBase
     {
         private readonly IMediator mediator;
