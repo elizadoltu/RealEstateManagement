@@ -7,12 +7,14 @@ using Domain.Common;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyAllowSpecificOrigins")]
     public class PropertyListingsController : ControllerBase
     {
         private readonly IMediator mediator;
