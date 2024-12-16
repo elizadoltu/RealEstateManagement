@@ -9,6 +9,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace RealEstateManagement.Controllers
 {
@@ -24,12 +25,24 @@ namespace RealEstateManagement.Controllers
             this.mediator = mediator;
         }
 
+        private bool IsUserAuthorized(Guid userId)
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return currentUserId != null && currentUserId == userId.ToString();
+        }
+
         [HttpPost]
         [EnableCors("AuthPolicy")]
         [Authorize]
         public async Task<ActionResult<Result<Guid>>> CreatePropertyListing(CreatePropertyListingCommand command)
         {
+            if (!IsUserAuthorized(command.UserID))
+            {
+                return Forbid();
+            }
+
             var result = await mediator.Send(command);
+
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -40,17 +53,25 @@ namespace RealEstateManagement.Controllers
             }
         }
         [HttpPut("{id:guid}")]
+        [Authorize]
         public async Task<ActionResult<Result<Unit>>> UpdatePropertyListing(Guid id, UpdatePropertyListingCommand command)
         {
             if (id != command.PropertyId)
             {
                 return BadRequest();
             }
+
+            if (!IsUserAuthorized(command.UserID))
+            {
+                return Forbid();
+            }
+
             var result = await mediator.Send(command);
             if (result.IsSuccess)
             {
                 return NoContent();
-            } else
+            }
+            else
             {
                 return BadRequest(result.ErrorMessage);
             }
@@ -71,10 +92,11 @@ namespace RealEstateManagement.Controllers
         }
 
         [HttpDelete("{id:guid}")]
+        [Authorize]
         public async Task<IActionResult> DeletePropertyListing(Guid id)
         {
             var result = await mediator.Send(new DeletePropertyListingCommand { PropertyId = id });
-            if (result.IsSuccess) 
+            if (result.IsSuccess)
             {
                 return NoContent();
             }

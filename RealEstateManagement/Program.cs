@@ -77,6 +77,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // Apply CORS middleware
+app.UseMiddleware<ValidationExceptionMiddleware>();
 app.UseCors("MyAllowSpecificOrigins"); // This should be applied before authentication and authorization
 app.UseCors("AuthPolicy");
 
