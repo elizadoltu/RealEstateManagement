@@ -25,6 +25,7 @@ namespace RealEstateManagement.Controllers
         }
 
         [HttpPost]
+        [EnableCors("AuthPolicy")]
         [Authorize]
         public async Task<ActionResult<Result<Guid>>> CreatePropertyListing(CreatePropertyListingCommand command)
         {
