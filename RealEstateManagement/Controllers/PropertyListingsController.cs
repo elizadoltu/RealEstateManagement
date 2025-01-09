@@ -54,6 +54,7 @@ namespace RealEstateManagement.Controllers
         }
         [HttpPut("{id:guid}")]
         [Authorize]
+        [EnableCors("AuthPolicy")]
         public async Task<ActionResult<Result<Unit>>> UpdatePropertyListing(Guid id, UpdatePropertyListingCommand command)
         {
             if (id != command.PropertyId)
@@ -100,6 +101,7 @@ namespace RealEstateManagement.Controllers
 
         [HttpDelete("{id:guid}")]
         [Authorize]
+        [EnableCors("AuthPolicy")]
         public async Task<IActionResult> DeletePropertyListing(Guid id)
         {
             var result = await mediator.Send(new DeletePropertyListingCommand { PropertyId = id });

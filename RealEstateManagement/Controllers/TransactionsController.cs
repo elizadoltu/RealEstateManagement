@@ -9,10 +9,12 @@ using Application.Utils;
 using Application.Use_Cases.Transactions.Commands;
 using Application.Use_Cases.Commands;
 using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 
 namespace RealEstateManagement.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("MyAllowSpecificOrigins")]
     [ApiController]
     public class TransactionsController : ControllerBase
     {
