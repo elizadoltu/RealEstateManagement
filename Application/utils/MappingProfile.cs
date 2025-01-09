@@ -5,10 +5,12 @@ using Domain.Entities;
 using Application.Use_Cases.ClientInquiries.Commands;
 using Application.Use_Cases.Users.CommandHandlers;
 using Application.Use_Cases.Users.Commands;
+using Application.Use_Cases.Transactions.Commands;
+using RealEstateManagement.Application.Transactions.Commands;
 
 namespace Application.utils
 {
-    public class MappingProfile: Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
@@ -21,6 +23,8 @@ namespace Application.utils
             CreateMap<UpdatePropertyListingCommand, PropertyListing>().ReverseMap();
             CreateMap<CreateClientInquiryCommand, ClientInquiry>().ReverseMap();
             CreateMap<UpdateClientInquiryCommand, ClientInquiry>().ReverseMap();
+            CreateMap<CreateTransactionCommand, Transaction>().ReverseMap();
+            CreateMap<UpdateTransactionCommand, Transaction>().ReverseMap();
             CreateMap<CreateUserCommand, User>().ReverseMap();
             CreateMap<UpdateUserCommand, User>().ReverseMap();
 
