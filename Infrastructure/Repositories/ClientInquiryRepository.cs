@@ -13,24 +13,44 @@ namespace Infrastructure.Repositories
         {
             this.context = context;
         }
-        public async Task<IEnumerable<ClientInquiry>> GetAllInquiriesAsync()
+        public async Task<Result<IEnumerable<ClientInquiry>>> GetAllInquiriesAsync()
         {
-            return await context.ClientInquiries.ToListAsync();
-        }
-        public async Task<ClientInquiry> GetInquiryByIdAsync(Guid id)
-        {
-            var inquiry = await context.ClientInquiries.FindAsync(id);
-            if (inquiry == null)
+            try
             {
-                throw new KeyNotFoundException($"Client inquiry with ID {id} not found.");
+                var inquiries = await context.ClientInquiries.ToListAsync();
+                return Result<IEnumerable<ClientInquiry>>.Success(inquiries);
             }
-            return inquiry;
+            catch (Exception ex)
+            {
+                return Result<IEnumerable<ClientInquiry>>.Failure($"An error occurred while retrieving inquiries: {ex.Message}");
+            }
+
         }
-        public async Task<IEnumerable<ClientInquiry>> GetInquiriesByClientId(Guid userId)
+        public async Task<Result<ClientInquiry>> GetInquiryByIdAsync(Guid id)
         {
-            return await context.ClientInquiries
-                                .Where(inquiry => inquiry.ClientId == userId)  
-                                .ToListAsync();
+            try
+            {
+                var inquiry = await context.ClientInquiries.FindAsync(id);
+                return Result<ClientInquiry>.Success(inquiry);
+            }
+            catch (Exception ex)
+            {
+                return Result<ClientInquiry>.Failure($"An error occurred while retrieving inquiry: {ex.Message}");
+            }
+        }
+        public async Task<Result<IEnumerable<ClientInquiry>>> GetInquiriesByClientId(Guid userId)
+        {
+            try
+            {
+                var inquiries = await context.ClientInquiries
+                                                    .Where(inquiry => inquiry.ClientId == userId)
+                                                    .ToListAsync();
+                return Result<IEnumerable<ClientInquiry>>.Success(inquiries);
+            }
+            catch (Exception ex)
+            {
+                return Result<IEnumerable<ClientInquiry>>.Failure($"An error occurred while retrieving inquiries: {ex.Message}");
+            }
         }
         public async Task<Result<Guid>> AddInquiryAsync(ClientInquiry inquiry)
         {
@@ -86,6 +106,21 @@ namespace Infrastructure.Repositories
             {
                 var errorMessage = ex.InnerException != null ? ex.InnerException.ToString() : ex.Message;
                 return Result<Guid>.Failure(errorMessage);
+            }
+        }
+
+        public async Task<Result<IEnumerable<PropertyListing>>> SearchAllPropertiesAsync(string searchQuery)
+        {
+            try
+            {
+                var properties = await context.PropertyListings
+                                        .Where(property => property.Title.ToUpper().Contains(searchQuery.ToUpper()) || property.Description.Contains(searchQuery))
+                                        .ToListAsync();
+                return Result<IEnumerable<PropertyListing>>.Success(properties);
+            }
+            catch (Exception ex)
+            {
+                return Result<IEnumerable<PropertyListing>>.Failure($"An error occurred while retrieving properties: {ex.Message}");
             }
         }
     }
