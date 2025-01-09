@@ -80,8 +80,7 @@ namespace Infrastructure.Migrations
                     PropertyId = table.Column<Guid>(type: "uuid", nullable: false),
                     BuyerId = table.Column<Guid>(type: "uuid", nullable: false),
                     SellerId = table.Column<Guid>(type: "uuid", nullable: false),
-                    SalePrice = table.Column<double>(type: "double precision", nullable: false),
-                    Status = table.Column<string>(type: "text", nullable: false)
+                    SalePrice = table.Column<double>(type: "double precision", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -120,6 +119,12 @@ namespace Infrastructure.Migrations
                 name: "IX_Transactions_SellerId",
                 table: "Transactions",
                 column: "SellerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Email",
+                table: "Users",
+                column: "Email",
+                unique: true);
         }
 
         /// <inheritdoc />
