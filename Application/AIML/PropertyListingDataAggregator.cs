@@ -13,21 +13,31 @@ namespace Application.AIML
             PropertyListingData = new List<PropertyListingData>();
         }
 
-        public List<PropertyListingData> GetPropertyListingData()
+        public List<PropertyListingData> GetPropertyListingData(bool trainingData = true)
         {
             string filePath = "data.csv";
+            int lineCount = File.ReadLines(filePath).Count();
+            int currentLine = 0;
             foreach (var line in File.ReadLines(filePath))
             {
+                currentLine++;
+                if (trainingData == true && currentLine > lineCount * 0.75)
+                    break;
+                if (trainingData == false && currentLine <= lineCount * 0.75)
+                    continue;
                 var fields = line.Split(',');
 
                 string Price = fields[0];
                 string NumberOfBedrooms = fields[1];
                 string SquareFootage = fields[2];
+                if (Price == null || NumberOfBedrooms == null || SquareFootage == null)
+                {
+                    continue;
+                }
                 PropertyListingData.Add(new PropertyListingData
                 {
-                    Price = float.Parse(Price),
-                    NumberOfBedrooms = float.Parse(NumberOfBedrooms),
-                    SquareFootage = float.Parse(SquareFootage)
+                    Label = float.Parse(Price),
+                    Features = new float[] { float.Parse(NumberOfBedrooms), (float)(float.Parse(SquareFootage) * 0.092903) }
                 });
             }
             return PropertyListingData;
