@@ -1,6 +1,7 @@
 ﻿using Application.DTOs;
 using Application.Use_Cases.PropertyListings.Queries;
 using Application.Utils;
+using Application.Use_Cases.PropertyListings.Filtering;
 using AutoMapper;
 using Domain.Common;
 using Domain.Repositories;

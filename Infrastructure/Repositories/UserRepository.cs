@@ -30,6 +30,10 @@ namespace Infrastructure.Repositories
             try
             {
                 var user = await context.Users.FindAsync(id);
+                if (user == null)
+                {
+                    return Result<User>.Failure("User not found.");
+                }
                 return Result<User>.Success(user);
             }
             catch (Exception ex)
@@ -48,7 +52,7 @@ namespace Infrastructure.Repositories
             }
             catch (Exception ex)
             {
-                return Result<Guid>.Failure(ex.InnerException!.ToString());
+                return Result<Guid>.Failure($"An error occurred while creating user: {ex.Message}");
             }
         }
         public async Task<Result<Guid>> UpdateUserAsync(User user)
@@ -70,8 +74,7 @@ namespace Infrastructure.Repositories
             }
             catch (Exception ex)
             {
-                var errorMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
-                return Result<Guid>.Failure(errorMessage);
+                return Result<Guid>.Failure($"An error occurred while updating user: {ex.Message}");
             }
         }
         public async Task<Result<Guid>> DeleteUserAsync(Guid id)
